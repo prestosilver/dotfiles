@@ -151,6 +151,10 @@ dotfiles:
     src: xprofile
     dst: ~/.xprofile
     chmod: '755'
+  d_conpositor:
+    src: config/conpositor
+    dst: ~/.config/conpositor
+    chmod: '777'
 profiles:
   john-pc:
     actions:
@@ -197,3 +201,4 @@ profiles:
     - d_prestosilver
     - d_conf.d
     - f_xprofile
+    - d_conpositor

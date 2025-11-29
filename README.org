@@ -39,9 +39,12 @@ Alacritty is a terminal emulator
 
 ** Config Highlights
 - Mondo integration
-* BUDLAND
+* BUDWM (X11)
 #+ATTR_HTML: :width 300px
 [[./assets/wm.png]]
+* CONPOSITOR (Wayland)
+#+ATTR_HTML: :width 300px
+[[./assets/compositor.png]]
 ** Config Highlights
 - Tiling
 - Container focused workflow
