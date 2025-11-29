@@ -1,9 +1,9 @@
-fg #252323
-bg #bdae93
+fg #bdae93
+bg #252323
 
 base00 #252323
-base01 #427b58
-base02 #8f3f71
+base01 #8f3f71
+base02 #427b58
 base03 #32302F
 
 base0 #b57614
@@ -19,6 +19,9 @@ blu #458588
 mag #b16286
 vio #076678
 cyn #689d6a
+
+white #ffffff
+black #000000
 
 fg1         fg
 fg2         base2
@@ -43,11 +46,14 @@ cursortheme     Adwaita
 icontheme       ePapirus
 gtktheme        buddybud 
 
-terminalfontface1 CaskaydiaCovePL Nerd Font
-terminalfontsize1 12
-terminalfontface2 Twitter Color Emoji
-terminalfontsize2 12
+terminalfontface1 CascadiaMonoPL Nerd Font Mono
+terminalfontsize1 14
+terminalfontface2 CascadiaMonoPL Nerd Font Mono
+terminalfontsize2 14
 
-guifontface1      CaskaydiaCovePL Nerd Font
-guifontsize1      12
-guifontsize2      10
+terminalfontstyle Regular
+
+guifontface1      CascadiaMonoPL Nerd Font Mono
+guifontsize1      14
+guifontface2      CascadiaMonoPL Nerd Font Mono
+guifontsize2      14

@@ -1,0 +1,124 @@
+# The Love Theme for Tauon Music Box
+# Version: 0.2.1
+# https://love.holllo.cc
+
+# Backgrounds
+
+187,98,125,255 player background (top panel)
+218,212,189,255 playlist panel
+218,212,189,255 side panel
+218,212,189,255 bottom panel
+218,212,189,255 gallery background
+
+# Playlist
+
+35,79,92,255 track line
+35,79,92,255 track time
+35,79,92,255 track index
+35,79,92,255 track artist
+35,79,92,255 album line
+
+43,88,96,255 track playing
+43,88,96,255 time playing
+43,88,96,255 index playing
+43,88,96,255 artist playing
+43,88,96,255 album playing
+
+214,91,127,255 track missing
+
+35,79,92,255 fav line
+35,79,92,255 folder line
+35,79,92,255 folder title
+
+187,98,125,255 playing highlight
+7,36,44,255 select highlight
+7,36,44,255 gallery highlight
+
+187,98,125,255 playing highlight
+7,36,44,255 select highlight
+7,36,44,255 gallery highlight
+
+218,212,189,255 column bar background
+
+# Bottom Panel
+
+35,79,92,255 bottom title
+
+35,79,92,255 buttons off
+35,79,92,255 buttons over
+43,88,96,255 buttons active
+
+35,79,92,255 playing time
+
+43,88,96,255 seek bar
+43,88,96,255 volume bar
+187,98,125,255 seek bg
+187,98,125,255 volume bg
+43,88,96,255 scroll bar
+
+35,79,92,255 mode off
+35,79,92,255 mode over
+43,88,96,255 mode on
+
+# Top Panel
+
+43,88,96,255 tab active text
+35,79,92,255 tab text
+187,98,125,255 tab background
+187,98,125,255 tab over
+187,98,125,255 tab active background
+187,98,125,255 music vis
+
+# Side Panel
+
+35,79,92,255 title info
+35,79,92,255 extra info
+7,36,44,255 art border
+
+# Mini Mode
+
+187,98,125,255 mini bg
+7,36,44,255 mini border
+43,88,96,255 mini text 1
+43,88,96,255 mini text 2
+
+# Menu
+
+187,98,125,255 menu background
+7,36,44,255 menu highlight
+43,88,96,255 menu text
+35,79,92,255 menu disable text
+7,36,44,255 menu border
+35,79,92,255 menu icons
+
+# Miscellaneous
+
+218,212,189,255 playlist box background
+218,212,189,255 artist bio background
+35,79,92,255 artist bio text
+
+# Dialog Box
+
+218,212,189,255 box background
+31,23,49 box border
+31,23,49 box title text
+31,23,49 box text label
+31,23,49 box text normal
+31,23,49 box sub text
+31,23,49 box input text
+31,23,49 box text border
+31,23,49 box button text normal
+43,88,96,255 box button text highlight
+43,88,96,255 box button background normal
+20,77,90 box button background highlight
+31,23,49 box button border
+
+# Window
+
+7,36,44,255 window frame
+242,239,255 window buttons background
+31,23,49 window buttons on
+31,23,49 window buttons icon off
+43,88,96,255 window buttons icon over
+43,88,96,255 window button x on
+31,23,49 window button x off

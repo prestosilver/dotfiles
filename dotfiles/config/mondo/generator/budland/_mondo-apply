@@ -18,4 +18,4 @@
 # To source the settings file one could use this:
 # source "${this_dir}/mondo-settings"
 
-echo keydown super+p | dotool
+conpositor-msg run 'reload_colors()'

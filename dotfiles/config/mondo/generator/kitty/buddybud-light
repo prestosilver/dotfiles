@@ -1,0 +1,33 @@
+font_family      family="CascadiaMonoPL Nerd Font Mono" style="Regular"
+font_size        14 
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+background_opacity 1.0
+window_margin_width 10
+
+background #bdae93
+foreground #252323
+cursor #252323
+selection_background #076678
+color0 #bdae93
+color8 #252323
+color1 #cc241d
+color9 #9d0006
+color2 #98971a
+color10 #427b58
+color3 #d79921
+color11 #32302F
+color4 #458588
+color12 #076678
+color5 #b16286
+color13 #bdae93
+color6 #689d6a
+color14 #ebdbb2
+color7 #252323
+color15 #f9f5d7
+selection_foreground #32302F
+
+enable_audio_bell no
+confirm_os_window_close 0

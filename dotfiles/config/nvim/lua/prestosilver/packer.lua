@@ -4,9 +4,9 @@ require("packer").startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'glepnir/dashboard-nvim'
     use 'nvim-tree/nvim-tree.lua'
+    use 'alaviss/nim.nvim'
     use 'jiangmiao/auto-pairs'
     use 'Shougo/neocomplcache.vim'
-    use 'alaviss/nim.nvim'
     use 'farmergreg/vim-lastplace'
     use 'ctrlpvim/ctrlp.vim'
     use 'vimwiki/vimwiki'
@@ -22,7 +22,6 @@ require("packer").startup(function(use)
     use 'idbrii/vim-unityengine'
     use 'OmniSharp/omnisharp-vim'
     use 'nanotee/zoxide.vim'
-    use 'nvim-neorg/neorg'
     use 'wakatime/vim-wakatime'
     use 'nvim-lua/plenary.nvim'
     use 'folke/todo-comments.nvim'
@@ -40,7 +39,7 @@ require("packer").startup(function(use)
     use 'romgrk/barbar.nvim'
 
     use 'pwntester/octo.nvim'
-    --use 'andweeb/presence.nvim'
+    use 'andweeb/presence.nvim'
     use 'junegunn/goyo.vim'
     use { 'yoshio15/vim-trello', branch = 'main' }
     use 'MarcWeber/vim-addon-mw-utils'
@@ -56,4 +55,5 @@ require("packer").startup(function(use)
     }
     use 'sbdchd/neoformat'
     use 'michaelrommel/nvim-silicon'
+    use 'plasticboy/vim-markdown'
 end)

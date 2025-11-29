@@ -42,17 +42,8 @@ ina3        base0
 sel1     base00
 sel2     base3
 
-wall base01
+wall     base01
 
 cursortheme     Adwaita  
 icontheme       ePapirus
 gtktheme        buddybud 
-
-terminalfontface1 CascadiaMonoPL Nerd Font Mono
-terminalfontsize1 12
-terminalfontface2 Twitter Color Emoji
-terminalfontsize2 12
-
-guifontface1      CascadiaMonoPL Nerd Font Mono
-guifontsize1      12
-guifontsize2      10

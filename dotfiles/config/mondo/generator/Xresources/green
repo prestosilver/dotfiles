@@ -1,0 +1,56 @@
+Xft.dpi: 144
+*.dpi: 144
+
+st.foreground:             #000000
+st.background:             #00ff00
+st.cursorColor:            #000000
+st.cursorColor2:           #00ff00
+st.borderColor:            #00ff00
+
+st.color0:                 #00ff00
+st.color8:                 #D8DEE9
+st.color1:                 #000000
+st.color9:                 #000000
+st.color2:                 #000000
+st.color10:                #ECEFF4
+st.color3:                 #000000
+st.color11:                #f9f5d7
+st.color4:                 #000000
+st.color12:                #000000
+st.color5:                 #000000
+st.color13:                #ffffff
+st.color6:                 #000000
+st.color14:                #ffffff
+st.color7:                 #000000
+st.color15:                #ffffff
+
+*.coloract1:              #ffffff
+*.coloract2:              #f9f5d7
+*.colorina1:              #ffffff
+*.colorina2:              #000000
+
+
+budwm.normbordercolor:      #ffffff
+budwm.normbgcolor:          #ffffff
+budwm.normfgcolor:          #000000
+budwm.selbordercolor:       #ffffff
+budwm.selbgcolor:           #ffffff
+budwm.selfgcolor:           #f9f5d7
+
+st.borderpx:          20
+st.alpha: 1
+
+*.font:       Papyrus Pixel Mono:size=14:antialias=true
+! #Papyrus Pixel Mono:size=12:antialias=true
+st.font:       Papyrus Pixel Mono :size=14:antialias=true
+*boldFont:       Papyrus Pixel Mono :size=14:antialias=true, Papyrus Pixel Mono:size=12:antialias=true
+*italicFont:     
+*boldItalicFont: 
+
+
+dmenu.background: #ffffff
+dmenu.foreground: #f9f5d7
+dmenu.selbackground: #ffffff
+dmenu.selforeground: #000000
+
+! syntax:ssExcla

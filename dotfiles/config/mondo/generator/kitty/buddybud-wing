@@ -1,0 +1,33 @@
+font_family      family="Wingdings" style="Regular"
+font_size        14 
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+background_opacity 1.0
+window_margin_width 10
+
+background #252323
+foreground #bdae93
+cursor #bdae93
+selection_background #458588
+color0 #252323
+color8 #b57614
+color1 #cc241d
+color9 #9d0006
+color2 #98971a
+color10 #ebdbb2
+color3 #d79921
+color11 #f9f5d7
+color4 #458588
+color12 #076678
+color5 #b16286
+color13 #8f3f71
+color6 #689d6a
+color14 #427b58
+color7 #bdae93
+color15 #32302F
+selection_foreground #f9f5d7
+
+enable_audio_bell no
+confirm_os_window_close 0

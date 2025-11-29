@@ -1,7 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
     zoxide init fish | source
-    ls
 end
 
 set -gx BROWSER firefox 
@@ -13,12 +12,12 @@ set -gx GEM_SPEC_CACHE "$XDG_CACHE_HOME"/gem
 set -gx GNUPGHOME "$XDG_DATA_HOME"/gnupg
 set -gx GOPATH "$HOME/.local/go"
 set -gx SDL_HOME "$HOME/.sdl/SDL2-2.0.12"
-set -gx LD_LIBRARY_PATH "/opt/libxfce4ui-nocsd/lib:$LD_LIBRARY_PATH"
 set -gx BWP_LOCK_IMAGE_OPTIONS "-resize 2560x1080!"
 set -gx CM_HISTLENGTH 20
 set -gx JAVA_HOME /usr/lib/jvm/java-8-openjdk/jre/
 set -gx BWP_GEOMETRY "2256x1504"
 set -gx MOZ_ENABLE_WAYLAND 1
+set -gx ELECTRON_OZONE_PLATFORM_HINT wayland
 
 thefuck --alias oops | source
 
@@ -30,3 +29,6 @@ function fish_right_prompt
 end
 
 thefuck --alias | source
+
+#set -gx __done_notification_command "dunstify \$title \$message"
+set -gx __done_min_cmd_duration 500 

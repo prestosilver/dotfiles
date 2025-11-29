@@ -1,0 +1,6 @@
+general {
+    col.active_border = rgba(36001BFF) 45deg
+    col.inactive_border = rgba(15152fFF)
+
+    layout = dwindle
+}

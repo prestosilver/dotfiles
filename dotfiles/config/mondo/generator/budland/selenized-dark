@@ -1,0 +1,130 @@
+# monitor layout
+monitor eDP-1 0 0
+monitor DP-1 2560 0
+
+# startup apps
+autoexec spawn swww init
+autoexec spawn killall -KILL python3
+autoexec spawn filesort
+autoexec spawn dunst
+autoexec spawn waybar
+autoexec spawn blueman-applet
+autoexec spawn nm-applet
+
+# terminals
+bind LOGO+Return spawn kitty --class=kittyA
+bind LOGO+SHIFT+Return spawn kitty --class=kittyB
+
+# terminal apps
+bind LOGO+I spawn kitty --class=htop -e htop
+bind LOGO+M spawn kitty --class=music -e spt
+bind LOGO+V spawn kitty --class=cava -e cava
+bind LOGO+R spawn kitty --class=filesD -e ranger
+bind LOGO+SHIFT+R spawn kitty --class=filesB -e ranger
+bind LOGO+SHIFT+S spawn ss.sh
+
+bind LOGO+1 focuscon 1
+bind LOGO+2 focuscon 2
+bind LOGO+3 focuscon 3
+bind LOGO+4 focuscon 4
+bind LOGO+SHIFT+1 sendcon 1
+bind LOGO+SHIFT+2 sendcon 2
+bind LOGO+SHIFT+3 sendcon 3
+bind LOGO+SHIFT+4 sendcon 4
+
+bind LOGO+F1 view 0
+bind LOGO+F2 view 1
+bind LOGO+F3 view 2
+bind LOGO+F4 view 3
+
+bind LOGO+SHIFT+F1 send 0
+bind LOGO+SHIFT+F2 send 1
+bind LOGO+SHIFT+F3 send 2
+bind LOGO+SHIFT+F4 send 3
+
+# gui apps
+bind LOGO+W spawn chromium
+bind LOGO+A spawn pavucontrol
+bind LOGO+B spawn dwlb -toggle-visibility selected
+bind LOGO+C spawn neovide
+
+# mgmt
+bind LOGO+Tab focusstack 1
+bind LOGO+H cyclelayout 1
+bind LOGO+SHIFT+H cyclelayout -1
+
+bind LOGO+Space togglefloating
+bind LOGO+F fullscreen
+bind LOGO+P reload
+bind LOGO+SHIFT+P reload
+
+# menu
+bind LOGO+D spawn bemenu-launcher 
+bind LOGO+SHIFT+D spawn j4-dmenu-desktop --dmenu=menu 
+bind LOGO+SHIFT+W spawn bwpcontrol menu
+bind LOGO+T spawn mondocontrol menu
+
+# misc
+bind LOGO+Q killclient
+
+# mouse binds
+mouse LOGO+Left move
+mouse LOGO+Right resize
+
+rule kittyA _ _  0 1 false false -1
+rule kittyB _ _  0 2 false false -1
+rule filesB _ _  0 2 false false -1
+rule filesD _ _  0 4 false false -1
+rule music _ _  0 3 false false -1
+rule discord _ Discord C 0 3 false false -1
+rule htop _ Tsk  0 3 false false -1
+rule Sxiv _ Pix  0 2 false false -1
+rule chromium _ Web  0 3 false false -1
+rule firefox _ Web  0 3 false false -1
+rule pavucontrol _ Vol  0 2 false false -1
+rule neovide _ Code  0 3 false false -1
+rule cava _ Vis  0 4 false false -1
+rule Spotify _ Mus _ 0 3 false false -1
+rule Emacs _ Code  0 3 false false -1
+rule _ SandEEE _ _ 0 3 false false -1
+
+# colors
+color active border 184956FF
+color active background 184956FF
+color active foreground cad8d9FF
+
+color inactive border 184956FF
+color inactive background 103c48FF
+color inactive foreground adbcbcFF
+
+font CaskaydiaCovePL Nerd Font
+
+# containers
+container A client 1 0.00 0.00 1.00 0.20
+container B client 2 0.00 0.00 1.00 0.40
+container C client 3 0.00 0.20 1.00 1.00
+container D client 4 0.00 0.40 1.00 1.00
+
+container B2 client 2 0.00 0.00 1.00 0.50
+container D2 client 4 0.00 0.50 1.00 1.00
+
+container AC multi 0.00 0.00 0.70 1.00 A C
+container BD multi 0.70 0.00 1.00 1.00 B D
+
+container AC2 multi 0.00 0.00 0.50 1.00 A C
+container BD2 multi 0.50 0.00 1.00 1.00 B2 D2
+
+container AC3 multi 0.00 0.00 0.25 1.00 A C
+container BD3 multi 0.25 0.00 1.00 1.00 B D
+
+container ABCD multi 0.00 0.00 1.00 1.00 AC BD
+container BIGB multi 0.00 0.00 1.00 1.00 AC2 BD2
+container SMALLB multi 0.00 0.00 1.00 1.00 AC3 BD3
+
+layout ABCD 20 20 [->-]
+layout BIGB 20 20 [-|-]
+layout SMALLB 20 20 [-<-]
+
+layout ABCD 0 0 ]->-[
+layout BIGB 0 0 ]-|-[
+layout SMALLB 0 0 ]-<-[

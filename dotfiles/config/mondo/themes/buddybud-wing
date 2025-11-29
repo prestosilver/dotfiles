@@ -1,0 +1,54 @@
+fg #bdae93
+bg #252323
+
+base00 #252323
+base01 #8f3f71
+base02 #427b58
+base03 #32302F
+
+base0 #b57614
+base1 #bdae93
+base2 #ebdbb2
+base3 #f9f5d7
+
+red #cc241d
+ora #9d0006
+grn #98971a
+ylw #d79921
+blu #458588
+mag #b16286
+vio #076678
+cyn #689d6a
+
+fg1         fg
+fg2         base2
+bg1         bg
+bg2         base03
+
+dark1       base00
+light1      base3
+
+act1        blu
+act2        base3
+act3        base03
+
+ina1        base03
+ina2        fg
+ina3        base03
+
+sel1     base00
+sel2     base3
+
+cursortheme     Adwaita  
+icontheme       ePapirus
+gtktheme        buddybud 
+
+terminalfontface1 Wingdings
+terminalfontsize1 14
+terminalfontface2 Wingdings 
+terminalfontsize2 14
+
+guifontface1      Wingdings
+guifontsize1      14
+guifontface2      Wingdings
+guifontsize2      14

@@ -1,0 +1,14 @@
+#!/bin/bash
+exec bemenu-run --fn "Papyrus Pixel Mono 14" \
+    --tb '#00ff00' --tf '#000000' \
+    --fb '#00ff00' --ff '#000000' \
+    --cb '#f9f5d7' --cf '#ffffff' \
+    --nb '#ffffff' --nf '#000000' \
+    --hb '#ffffff' --hf '#f9f5d7' \
+    --fbb '#ffffff' --fbf '#f9f5d7' \
+    --sb '#ffffff' --sf '#f9f5d7' \
+    --ab '#ffffff' --af '#000000' \
+    --scb '#ffffff' --scf '#f9f5d7' \
+    --bdr '#ffffff' \
+    --hp 10 --list 15 \
+    -B 2 --fixed-height --counter always

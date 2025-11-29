@@ -51,7 +51,7 @@ select_wallpaper() {
 
   newwall="$(
     find "$wdir" ! -path "$wdir" -printf '%f\n' \
-    | dmenu
+    | menu
   )"
 
   [[ -n $newwall ]] && {
@@ -85,7 +85,7 @@ rename_wallpaper() {
         --width   350        \
 
     else
-      dmenu -n -t "$_curnam"
+      menu -n -t "$_curnam"
     fi
 
   )"

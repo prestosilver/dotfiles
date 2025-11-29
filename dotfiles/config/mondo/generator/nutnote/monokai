@@ -1,0 +1,31 @@
+# colors 
+
+hiMode 0, "selection", 241, 235, 235
+hiMode 0, "bg"       , 39, 40, 34
+hiMode 0, "grid"     , 39, 40, 34
+hiMode 0, "card"     , 39, 40, 34
+hiMode 0, "border"   , 143, 192, 41
+hiMode 0, "progress" , 39, 40, 34
+hiMode 0, "err"      , 220, 37, 102
+hiMode 0, "text"     , 241, 235, 235
+hiMode 0, "status"   , 241, 235, 235
+
+hiMode 1, "selection", 174, 130, 255
+hiMode 1, "bg"       , 39, 40, 34
+hiMode 1, "grid"     , 39, 40, 34
+hiMode 1, "card"     , 39, 40, 34
+hiMode 1, "border"   , 143, 192, 41
+hiMode 1, "progress" , 39, 40, 34
+hiMode 1, "err"      , 220, 37, 102
+hiMode 1, "text"     , 241, 235, 235
+hiMode 1, "status"   , 241, 235, 235
+
+hiMode 2, "selection", 212, 201, 110
+hiMode 2, "bg"       , 39, 40, 34
+hiMode 2, "grid"     , 39, 40, 34
+hiMode 2, "card"     , 39, 40, 34
+hiMode 2, "border"   , 143, 192, 41
+hiMode 2, "progress" , 39, 40, 34
+hiMode 2, "err"      , 220, 37, 102
+hiMode 2, "text"     , 241, 235, 235
+hiMode 2, "status"   , 241, 235, 235

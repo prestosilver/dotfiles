@@ -38,12 +38,3 @@ ina3        base01
 
 sel1     base00
 sel2     base3
-
-terminalfontface1 Monocraft
-terminalfontsize1 12
-terminalfontface2 Monocraft
-terminalfontsize2 12
-
-guifontface1      Monocraft
-guifontsize1      12
-guifontsize2      10

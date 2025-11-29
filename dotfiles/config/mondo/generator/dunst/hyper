@@ -1,0 +1,48 @@
+[urgency_low]
+    # IMPORTANT: colors have to be defined in quotation marks.
+    # Otherwise the "#" and following would be interpreted as a comment.
+    background = "#3d6481"
+    foreground = "#c5a9a7"
+    frame_color = "#15152f"
+    timeout = 1
+
+    # Icon for notifications with low urgency
+
+[urgency_normal]
+    background = "#254f64"
+    foreground = "#FFEFFE"
+    frame_color = "#15152f"
+
+    timeout = 3
+    override_pause_level = 30
+    # Icon for notifications with normal urgency
+
+[urgency_critical]
+    background = "#ffffff"
+    foreground = "#546039"
+    frame_color = "#546039"
+    timeout = 0
+    override_pause_level = 60
+    # Icon for notifications with critical urgency
+    default_icon = dialog-warning
+
+[global]
+    # Defines color of the frame around the notification window.
+
+    # Define a color for the separator.
+    # possible values are:
+    #  * auto: dunst tries to find a color fitting to the background;
+    #  * foreground: use the same color as the foreground;
+    #  * frame: use the same color as the frame;
+    #  * anything else will be interpreted as a X color.
+    separator_color = frame
+
+    font = CascadiaMonoPL Nerd Font Mono 14
+    # Paths to default icons.
+    icon_path = $HOME/.icons/hyper/16/status:/home/john/.icons/hyper/16/devices/
+# syntax:ssHash
+
+# act1: ;
+# act2: ;
+# act3: ;
+# font1: " ";

@@ -6,8 +6,9 @@
 #color=$(mondo -c wall)
 #convert -size 100x100 "xc:$color" ~/pix/wallpapers/wall.png
 #feh --bg-fill ~/pix/wallpapers/wall.png
-sleep 1
-feh --bg-fill $1
-#feh --bg-fill ~/pix/wallpapers/currentwall
-#swww img ~/pix/wallpapers/wall.png
-#swww img ~/pix/wallpapers/currentwall --transition-type outer -f Nearest --transition-fps 60
+#sleep 1
+#feh --bg-scale --bg-center $1
+#feh --bg-center $1
+feh --bg-fill ~/pix/wallpapers/currentwall
+#swww img $1
+swww img /home/john/pix/wallpapers/currentwall --transition-type outer -f Nearest --transition-fps 60

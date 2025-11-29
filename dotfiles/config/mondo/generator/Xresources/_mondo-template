@@ -1,3 +1,6 @@
+Xft.dpi: 144
+*.dpi: 144
+
 st.foreground:             %%fg%%
 st.background:             %%bg%%
 st.cursorColor:            %%fg%%
@@ -37,12 +40,13 @@ budwm.selfgcolor:           %%act2%%
 st.borderpx:          20
 st.alpha: 1
 
-*.font:       %%guifontface1%%:size=%%guifontsize1%%:antialias=true
-! #%%guifontface2%%:size=%%guifontsize2%%:antialias=true
-st.font:       %%terminalfontface1%%:size=%%terminalfontsize1%%:antialias=true
-*boldFont:       %%terminalfontface1%%:size=%%terminalfontsize1%%:antialias=true, %%terminalfontface2%%:size=%%terminalfontsize2%%:antialias=true
+*.font:       %%guifontface1%%:size=14:antialias=true
+! #%%guifontface2%%:size=12:antialias=true
+st.font:       %%terminalfontface1%%:size=14:antialias=true
+*boldFont:       %%terminalfontface1%%:size=14:antialias=true, %%terminalfontface2%%:size=12:antialias=true
 *italicFont:     
 *boldItalicFont: 
+
 
 dmenu.background: %%act1%%
 dmenu.foreground: %%act2%%

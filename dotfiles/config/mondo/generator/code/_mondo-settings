@@ -16,4 +16,4 @@ format="hex"
 # target can be an (absolute) file path to where
 # the file will be copied when a theme is applied.
 
-target="$HOME/.vscode-oss/extensions/vscode-wal/themes/vs-wal-color-theme.json"
+target="$HOME/.vscode-insiders/extensions/vscode-wal/themes/vs-wal-color-theme.json"

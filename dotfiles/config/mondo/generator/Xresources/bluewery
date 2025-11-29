@@ -1,0 +1,56 @@
+Xft.dpi: 144
+*.dpi: 144
+
+st.foreground:             #234f5c
+st.background:             #dad4bd
+st.cursorColor:            #234f5c
+st.cursorColor2:           #dad4bd
+st.borderColor:            #dad4bd
+
+st.color0:                 #dad4bd
+st.color8:                 #cdc7b0
+st.color1:                 #d65b7f
+st.color9:                 #bb627d
+st.color2:                 #b5ab95
+st.color10:                #7b8791
+st.color3:                 #d16545
+st.color11:                #2b5860
+st.color4:                 #428182
+st.color12:                #7b8791
+st.color5:                 #c7c1aa
+st.color13:                #bb627d
+st.color6:                 #b7c1aa
+st.color14:                #4c8d77
+st.color7:                 #234f5c
+st.color15:                #978f65
+
+*.coloract1:              #bb627d
+*.coloract2:              #2b5860
+*.colorina1:              #bb627d
+*.colorina2:              #234f5c
+
+
+budwm.normbordercolor:      #07242c
+budwm.normbgcolor:          #bb627d
+budwm.normfgcolor:          #234f5c
+budwm.selbordercolor:       #07242c
+budwm.selbgcolor:           #bb627d
+budwm.selfgcolor:           #2b5860
+
+st.borderpx:          20
+st.alpha: 1
+
+*.font:       CascadiaMonoPL Nerd Font Mono:size=14:antialias=true
+! #CascadiaMonoPL Nerd Font Mono:size=12:antialias=true
+st.font:       CascadiaMonoPL Nerd Font Mono:size=14:antialias=true
+*boldFont:       CascadiaMonoPL Nerd Font Mono:size=14:antialias=true, CascadiaMonoPL Nerd Font Mono:size=12:antialias=true
+*italicFont:     
+*boldItalicFont: 
+
+
+dmenu.background: #bb627d
+dmenu.foreground: #2b5860
+dmenu.selbackground: #bb627d
+dmenu.selforeground: #234f5c
+
+! syntax:ssExcla

@@ -1,0 +1,13 @@
+-- color theme
+funcs = require("conpositor.funcs")
+
+-- generated with mondo
+session:set_color(true, "border", "#1f2b68FF")
+session:set_color(true, "background", "#1f2b68FF")
+session:set_color(true, "foreground", "#aeb7e8FF")
+
+session:set_color(false, "border", "#15152fFF")
+session:set_color(false, "background", "#0b164fFF")
+session:set_color(false, "foreground", "#47bc4fFF")
+
+funcs.set_font_pt("CascadiaMonoPL Nerd Font Mono", 14)

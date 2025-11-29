@@ -12,11 +12,11 @@
 # rgb, colors will be translated to RGB format.
 # Example: #FF00FF -> 255,255,255
 # format="hex"
-colorformat="%R%G%B"
+colorformat="#%R%G%BFF"
 
 # target can be an (absolute) file path to where
 # the file will be copied when a theme is applied.
 
-target="$HOME/.config/budland/budland.conf"
+target="$HOME/.config/conpositor/mondo/colors.lua"
 
 # syntax:ssHash

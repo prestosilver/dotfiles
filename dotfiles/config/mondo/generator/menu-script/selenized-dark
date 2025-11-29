@@ -1,0 +1,17 @@
+#!/bin/bash
+exec bemenu --fn "CascadiaMonoPL Nerd Font Mono" -H 20 \
+    --hp 10 -c --list 15 -W 0.5 \
+    --ab '#103c48' \
+    --af '#adbcbc' \
+    --nb '#103c48' \
+    --nf '#adbcbc' \
+    --hb '#184956' \
+    --hf '#cad8d9' \
+    --fb '#103c48' \
+    --ff '#adbcbc' \
+    --fbb '#184956' \
+    --fbf '#cad8d9' \
+    --tb '#184956' \
+    --tf '#cad8d9' \
+    --bdr '#184956' \
+    -B 2 --fixed-height --scrollbar --counter

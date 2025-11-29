@@ -17,10 +17,16 @@ lspconfig.rust_analyzer.setup {
     on_attach = lsp_status.on_attach,
     capabilities = lsp_status.capabilities
 }
+
 lspconfig.nim_langserver.setup {
     on_attach = lsp_status.on_attach,
     capabilities = lsp_status.capabilities
 }
+
+-- lspconfig.nimls.setup {
+--     on_attach = lsp_status.on_attach,
+--     capabilities = lsp_status.capabilities
+-- }
 
 lspconfig.lua_ls.setup {
     on_attach = lsp_status.on_attach,
@@ -54,12 +60,14 @@ vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(ev)
         -- format on save
         vim.api.nvim_create_autocmd("BufWritePre", {
-          -- 3
-          buffer = ev.buf,
-          callback = function()
-            -- 4 + 5
-            vim.lsp.buf.format {async = false, id = ev.data.client_id }
-          end,
+            -- 3
+            buffer = ev.buf,
+            callback = function()
+                -- 4 + 5
+                if vim.lsp.buf.filetype == "zig" then
+                    vim.lsp.buf.format { async = false, id = ev.data.client_id }
+                end
+            end,
         })
 
         -- Enable completion triggered by <c-x><c-o>
@@ -87,3 +95,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
         end, opts)
     end,
 })
+
+vim.diagnostic.config({ virtual_text = true })

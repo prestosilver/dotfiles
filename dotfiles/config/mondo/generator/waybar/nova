@@ -1,0 +1,101 @@
+* {
+  font-size: 12pt;
+  font-family: FiraCode Nerd Font Mono;
+  font-weight: bold;
+  color: #E5E9F0;
+}
+
+window#waybar {
+  background: #899BA6;
+  color: #E5E9F0;
+}
+
+#window {
+  background: #899BA6;
+  color: #E5E9F0;
+}
+
+#custom-spacer {
+  padding: 0 3px;
+  color: #81A1C1;
+}
+
+#cava {
+  padding: 0 3px;
+  background: #556873;
+  color: #899BA6;
+}
+
+#workspaces,
+#workspaces button {
+  padding-left: 5px;
+  background-color: #899BA6;
+  border: 0;
+  color: #D8DEE9;
+}
+
+#custom-conpositor-layout {
+  background-color: #6A7D89;
+  color: #D8DEE9;
+  padding: 5px 3px;
+}
+
+#custom-conpositor-tag {
+  background-color: #6A7D89;
+  color: #D8DEE9;
+  padding-right: 5px;
+}
+
+#pulseaudio.muted {
+  background-color: #6A7D89;
+  color: #D8DEE9;
+}
+
+#battery.1 {
+  padding-left: 5px;
+}
+
+#clock {
+  padding-left: 5px;
+}
+
+#disk,
+#clock,
+#battery,
+#user,
+#pulseaudio,
+#custom-spotify {
+  background-color: #899BA6;
+  color: #E5E9F0;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#tray {
+  background-color: #6A7D89;
+  color: #D8DEE9;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#battery.charging {
+  background-color: #A3BE8C;
+  color: #6A7D89;
+}
+
+@keyframes blink {
+  to {
+    background-color: #6A7D89;
+    color: #BF616A;
+  }
+}
+
+#battery.warning:not(.charging) {
+  background: #BF616A;
+  color: #6A7D89;
+  animation-name: blink;
+  animation-duration: 1.0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

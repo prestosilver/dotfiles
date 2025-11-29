@@ -1,210 +1,63 @@
-;;; doom-1337-theme.el --- ported from VSCode's 1337 theme -*- lexical-binding: t; no-byte-compile: t; -*-
-;;
-;; Added: May 22, 2021 (#545)
-;; Author: ccmywish <https://github.com/ccmywish>
-;; Maintainer:
-;; Source: https://github.com/microsoft/vscode-themes/tree/main/1337
-;; Source: https://github.com/MarkMichos/1337-Scheme
-;;
-;;; Commentary:
-;;; Code:
+(deftheme mondo
+  "Created 2024-02-24.")
 
-(require 'doom-themes)
+(custom-theme-set-faces
+ 'mondo
+ '(default ((t (:family "CaskaydiaCovePL Nerd Font" :foundry "SAJA" :width normal :height 100 :weight regular :slant normal :underline nil :overline nil :extend nil :strike-through nil :box nil :inverse-video nil :foreground "%%fg%%" :background "%%bg%%" :stipple nil :inherit nil))))
+ '(cursor ((((background light)) (:background "%%act2%%")) (((background dark)) (:background "%%act2%%"))))
+ '(fixed-pitch ((t (:family "Monospace"))))
+ '(variable-pitch ((((type w32)) (:foundry "outline" :family "Arial")) (t (:family "Sans Serif"))))
+ '(escape-glyph ((((background dark)) (:foreground "%%cyn%%")) (((type pc)) (:foreground "%%mag%%")) (t (:foreground "%%mag%%"))))
+ '(homoglyph ((((background dark)) (:foreground "%%cyn%%")) (((type pc)) (:foreground "%%mag%%")) (t (:foreground "%%mag%%"))))
+ '(minibuffer-prompt ((((background dark)) (:foreground "%%cyn%%")) (((type pc)) (:foreground "%%mag%%")) (t (:foreground "medium blue"))))
+ '(highlight ((((class color) (min-colors 88) (background light)) (:background "%%act2%%")) (((class color) (min-colors 88) (background dark)) (:background "%%act2%%")) (((class color) (min-colors 16) (background light)) (:background "%%act1%%")) (((class color) (min-colors 16) (background dark)) (:background "darkolivegreen")) (((class color) (min-colors 8)) (:foreground "black" :background "green")) (t (:inverse-video t))))
+ '(region ((((class color) (min-colors 88) (background dark)) (:extend t :background "blue3")) (((class color) (min-colors 88) (background light)) (:extend t :background "lightgoldenrod2")) (((class color) (min-colors 16) (background dark)) (:extend t :background "blue3")) (((class color) (min-colors 16) (background light)) (:extend t :background "lightgoldenrod2")) (((class color) (min-colors 8)) (:extend t :foreground "white" :background "blue")) (((type tty) (class mono)) (:inverse-video t)) (t (:extend t :background "gray"))))
+ '(shadow ((((class color grayscale) (min-colors 88) (background light)) (:foreground "grey50")) (((class color grayscale) (min-colors 88) (background dark)) (:foreground "grey70")) (((class color) (min-colors 8) (background light)) (:foreground "green")) (((class color) (min-colors 8) (background dark)) (:foreground "yellow"))))
+ '(secondary-selection ((((class color) (min-colors 88) (background light)) (:extend t :background "yellow1")) (((class color) (min-colors 88) (background dark)) (:extend t :background "SkyBlue4")) (((class color) (min-colors 16) (background light)) (:extend t :background "yellow")) (((class color) (min-colors 16) (background dark)) (:extend t :background "SkyBlue4")) (((class color) (min-colors 8)) (:extend t :foreground "black" :background "%%cyn%%")) (t (:inverse-video t))))
+ '(trailing-whitespace ((((class color) (background light)) (:background "red1")) (((class color) (background dark)) (:background "red1")) (t (:inverse-video t))))
+ '(font-lock-bracket-face ((t (:inherit (font-lock-punctuation-face)))))
+ '(font-lock-builtin-face ((((class grayscale) (background light)) (:weight bold :foreground "LightGray")) (((class grayscale) (background dark)) (:weight bold :foreground "DimGray")) (((class color) (min-colors 88) (background light)) (:foreground "dark slate blue")) (((class color) (min-colors 88) (background dark)) (:foreground "LightSteelBlue")) (((class color) (min-colors 16) (background light)) (:foreground "Orchid")) (((class color) (min-colors 16) (background dark)) (:foreground "LightSteelBlue")) (((class color) (min-colors 8)) (:weight bold :foreground "blue")) (t (:weight bold))))
+ '(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
+ '(font-lock-comment-face ((((class grayscale) (background light)) (:slant italic :weight bold :foreground "DimGray")) (((class grayscale) (background dark)) (:slant italic :weight bold :foreground "LightGray")) (((class color) (min-colors 88) (background light)) (:foreground "Firebrick")) (((class color) (min-colors 88) (background dark)) (:foreground "chocolate1")) (((class color) (min-colors 16) (background light)) (:foreground "red")) (((class color) (min-colors 16) (background dark)) (:foreground "red1")) (((class color) (min-colors 8) (background light)) (:foreground "red")) (((class color) (min-colors 8) (background dark)) (:foreground "yellow")) (t (:slant italic :weight bold))))
+ '(font-lock-constant-face ((((class grayscale) (background light)) (:underline (:color foreground-color :style line :position nil) :weight bold :foreground "LightGray")) (((class grayscale) (background dark)) (:underline (:color foreground-color :style line :position nil) :weight bold :foreground "Gray50")) (((class color) (min-colors 88) (background light)) (:foreground "dark cyan")) (((class color) (min-colors 88) (background dark)) (:foreground "Aquamarine")) (((class color) (min-colors 16) (background light)) (:foreground "CadetBlue")) (((class color) (min-colors 16) (background dark)) (:foreground "Aquamarine")) (((class color) (min-colors 8)) (:foreground "%%mag%%")) (t (:underline (:color foreground-color :style line :position nil) :weight bold))))
+ '(font-lock-delimiter-face ((t (:inherit (font-lock-punctuation-face)))))
+ '(font-lock-doc-face ((t (:inherit (font-lock-string-face)))))
+ '(font-lock-doc-markup-face ((t (:inherit (font-lock-constant-face)))))
+ '(font-lock-escape-face ((t (:inherit (font-lock-regexp-grouping-backslash)))))
+ '(font-lock-function-call-face ((t (:inherit (font-lock-function-name-face)))))
+ '(font-lock-function-name-face ((((class color) (min-colors 88) (background light)) (:foreground "Blue1")) (((class color) (min-colors 88) (background dark)) (:foreground "LightSkyBlue")) (((class color) (min-colors 16) (background light)) (:foreground "Blue")) (((class color) (min-colors 16) (background dark)) (:foreground "LightSkyBlue")) (((class color) (min-colors 8)) (:weight bold :foreground "blue")) (t (:weight bold :inverse-video t))))
+ '(font-lock-keyword-face ((((class grayscale) (background light)) (:weight bold :foreground "LightGray")) (((class grayscale) (background dark)) (:weight bold :foreground "DimGray")) (((class color) (min-colors 88) (background light)) (:foreground "Purple")) (((class color) (min-colors 88) (background dark)) (:foreground "Cyan1")) (((class color) (min-colors 16) (background light)) (:foreground "Purple")) (((class color) (min-colors 16) (background dark)) (:foreground "Cyan")) (((class color) (min-colors 8)) (:weight bold :foreground "%%cyn%%")) (t (:weight bold))))
+ '(font-lock-negation-char-face ((t nil)))
+ '(font-lock-number-face ((t nil)))
+ '(font-lock-misc-punctuation-face ((t (:inherit (font-lock-punctuation-face)))))
+ '(font-lock-operator-face ((t nil)))
+ '(font-lock-preprocessor-face ((t (:inherit (font-lock-builtin-face)))))
+ '(font-lock-property-name-face ((t (:inherit (font-lock-variable-name-face)))))
+ '(font-lock-property-use-face ((t (:inherit (font-lock-property-name-face)))))
+ '(font-lock-punctuation-face ((t nil)))
+ '(font-lock-regexp-grouping-backslash ((t (:inherit (bold)))))
+ '(font-lock-regexp-grouping-construct ((t (:inherit (bold)))))
+ '(font-lock-string-face ((((class grayscale) (background light)) (:slant italic :foreground "DimGray")) (((class grayscale) (background dark)) (:slant italic :foreground "LightGray")) (((class color) (min-colors 88) (background light)) (:foreground "VioletRed4")) (((class color) (min-colors 88) (background dark)) (:foreground "LightSalmon")) (((class color) (min-colors 16) (background light)) (:foreground "RosyBrown")) (((class color) (min-colors 16) (background dark)) (:foreground "LightSalmon")) (((class color) (min-colors 8)) (:foreground "green")) (t (:slant italic))))
+ '(font-lock-type-face ((((class grayscale) (background light)) (:weight bold :foreground "Gray90")) (((class grayscale) (background dark)) (:weight bold :foreground "DimGray")) (((class color) (min-colors 88) (background light)) (:foreground "ForestGreen")) (((class color) (min-colors 88) (background dark)) (:foreground "PaleGreen")) (((class color) (min-colors 16) (background light)) (:foreground "ForestGreen")) (((class color) (min-colors 16) (background dark)) (:foreground "PaleGreen")) (((class color) (min-colors 8)) (:foreground "green")) (t (:underline (:color foreground-color :style line :position nil) :weight bold))))
+ '(font-lock-variable-name-face ((((class grayscale) (background light)) (:slant italic :weight bold :foreground "Gray90")) (((class grayscale) (background dark)) (:slant italic :weight bold :foreground "DimGray")) (((class color) (min-colors 88) (background light)) (:foreground "sienna")) (((class color) (min-colors 88) (background dark)) (:foreground "LightGoldenrod")) (((class color) (min-colors 16) (background light)) (:foreground "DarkGoldenrod")) (((class color) (min-colors 16) (background dark)) (:foreground "LightGoldenrod")) (((class color) (min-colors 8)) (:weight light :foreground "yellow")) (t (:slant italic :weight bold))))
+ '(font-lock-variable-use-face ((t (:inherit (font-lock-variable-name-face)))))
+ '(font-lock-warning-face ((t (:inherit (error)))))
+ '(button ((t (:inherit (link)))))
+ '(link ((((class color) (min-colors 88) (background light)) (:underline (:color foreground-color :style line :position nil) :foreground "RoyalBlue3")) (((class color) (background light)) (:underline (:color foreground-color :style line :position nil) :foreground "blue")) (((class color) (min-colors 88) (background dark)) (:underline (:color foreground-color :style line :position nil) :foreground "cyan1")) (((class color) (background dark)) (:underline (:color foreground-color :style line :position nil) :foreground "%%cyn%%")) (t (:inherit (underline)))))
+ '(link-visited ((default (:inherit (link))) (((class color) (background light)) (:foreground "magenta4")) (((class color) (background dark)) (:foreground "violet"))))
+ '(fringe ((((class color) (background light)) (:background "grey95")) (((class color) (background dark)) (:background "grey10")) (t (:background "gray"))))
+ '(header-line ((default (:inherit (mode-line))) (((type tty)) (:underline (:color foreground-color :style line :position nil) :inverse-video nil)) (((class color grayscale) (background light)) (:box nil :foreground "grey20" :background "grey90")) (((class color grayscale) (background dark)) (:box nil :foreground "grey90" :background "grey20")) (((class mono) (background light)) (:underline (:color foreground-color :style line :position nil) :box nil :inverse-video nil :foreground "black" :background "white")) (((class mono) (background dark)) (:underline (:color foreground-color :style line :position nil) :box nil :inverse-video nil :foreground "white" :background "black"))))
+ '(tooltip ((((class color)) (:inherit (variable-pitch) :foreground "black" :background "lightyellow")) (t (:inherit (variable-pitch)))))
+ '(mode-line ((((class color) (min-colors 88)) (:foreground "black" :background "grey75" :box (:line-width (1 . -1) :color nil :style released-button))) (t (:inverse-video t))))
+ '(mode-line-buffer-id ((t (:weight bold))))
+ '(mode-line-emphasis ((t (:weight bold))))
+ '(mode-line-highlight ((((supports :box t) (class color) (min-colors 88)) (:box (:line-width (2 . 2) :color "grey40" :style released-button))) (t (:inherit (highlight)))))
+ '(mode-line-inactive ((default (:inherit (mode-line))) (((class color) (min-colors 88) (background light)) (:background "grey90" :foreground "grey20" :box (:line-width (1 . -1) :color "grey75" :style nil) :weight light)) (((class color) (min-colors 88) (background dark)) (:background "grey30" :foreground "grey80" :box (:line-width (1 . -1) :color "grey40" :style nil) :weight light))))
+ '(isearch ((((class color) (min-colors 88) (background light)) (:foreground "lightskyblue1" :background "magenta3")) (((class color) (min-colors 88) (background dark)) (:foreground "brown4" :background "palevioletred2")) (((class color) (min-colors 16)) (:foreground "cyan1" :background "magenta4")) (((class color) (min-colors 8)) (:foreground "cyan1" :background "magenta4")) (t (:inverse-video t))))
+ '(isearch-fail ((((class color) (min-colors 88) (background light)) (:background "RosyBrown1")) (((class color) (min-colors 88) (background dark)) (:background "red4")) (((class color) (min-colors 16)) (:background "red")) (((class color) (min-colors 8)) (:background "red")) (((class color grayscale)) (:foreground "grey")) (t (:inverse-video t))))
+ '(lazy-highlight ((((class color) (min-colors 88) (background light)) (:distant-foreground "black" :background "paleturquoise")) (((class color) (min-colors 88) (background dark)) (:distant-foreground "white" :background "paleturquoise4")) (((class color) (min-colors 16)) (:distant-foreground "white" :background "turquoise3")) (((class color) (min-colors 8)) (:distant-foreground "white" :background "turquoise3")) (t (:underline (:color foreground-color :style line :position nil)))))
+ '(match ((((class color) (min-colors 88) (background light)) (:background "khaki1")) (((class color) (min-colors 88) (background dark)) (:background "RoyalBlue3")) (((class color) (min-colors 8) (background light)) (:foreground "black" :background "yellow")) (((class color) (min-colors 8) (background dark)) (:foreground "white" :background "blue")) (((type tty) (class mono)) (:inverse-video t)) (t (:background "gray"))))
+ '(next-error ((t (:inherit (region)))))
+ '(query-replace ((t (:inherit (isearch))))))
 
-
-;;
-;;; Variables
-
-(defgroup doom-mondo nil
-  "Options for the doom-mondo theme."
-  :group 'doom-themes)
-
-(defcustom doom-mondo-padded-modeline doom-themes-padded-modeline
-  "If non-nil, adds a 4px padding to the mode-line.
-Can be an integer to determine the exact padding."
-  :group 'doom-mondo-theme
-  :type '(choice integer boolean))
-
-(defcustom doom-mondo-blue-modeline nil
-  "If non-nil, mode-line's color will be blue instead of the default purple."
-  :group 'doom-mondo-theme
-  :type '(choice integer boolean))
-
-
-;;
-;;; Theme definition
-
-(def-doom-theme doom-mondo
-  "A dark theme inspired by mondo Theme."
-
-  ;; name        default   256       16
-  ((bg         '("%%bg%%" "#191919" nil))
-   (bg-alt     '("%%bg%%" "#222222"  nil))
-   (base0      '("%%ina1%%" "#111122"   "black"))
-   (base1      '("%%act1%%" "#1C1C1C" "brightblack"))
-   (base2      '("#121212" "#626262" "brightblack"))
-   (base3      '("#3D3D3D" "#3D3D3D" "brightblack"))
-   (base4      '("#4b474c" "#444444" "brightblack"))
-   (base5      '("#515151" "#515151" "brightblack"))
-   (base6      '("#6D6D6D" "#6D6D6D" "brightblack"))
-   (base7      '("%%act2%%" "#767676" "brightblack"))
-   (base8      '("%%ina2%%" "#a8a8a8" "white"))
-   (fg         '("%%fg%%" "#d4d4d4" "brightwhite"))
-   (fg-alt     '("%%fg%%" "#bcbcbc" "white"))
-
-   (grey base7)
-   (white        '("%%fg%%" "#FFFFFF" "white"))
-   (red          '("%%red%%" "#FF5E5E" "red"))
-   (orange       '("%%ora%%" "#FC9354" "brightred"))
-   (green        '("%%grn%%" "#468800" "green"))
-   (light-green  '("%%grn%%" "#BBCCAA" "green"))
-   (teal         '("%%cyn%%" "#33CCAA" "brightgreen"))
-   (yellow       '("%%ylw%%" "#E9FDAC" "brightyellow"))
-   (light-yellow '("%%ylw%%" "#FBE3BF" "brightyellow"))
-   (blue         '("%%blu%%" "#8CDAFF" "brightblue"))
-   (dark-blue    '("%%blu%%" "#6699CC" "blue"))
-   (magenta      '("%%mag%%" "#CC88CC" "brightmagenta"))
-   (violet       '("%%vio%%" "#BB88BB" "magenta"))
-   (dark-violet  '("%%vio%%" "#662277" "magenta"))
-   (cyan         '("%%cyn%%" "#5FD7FF" "brightcyan"))
-   (dark-cyan    '("%%cyn%%" "#2277AA" "cyan"))
-
-   ;; component focused
-   (bottomline-blue '("%%ina1%%" "#2467D0" "blue"))
-   (vcmodified-blue '("%%ina1%%" "#007B9F" "blue"))
-   (vcdeleted-red '("%%red%%" "#9D0012" "red"))
-
-   ;; face categories -- required for all themes
-   (highlight      white)
-   (vertical-bar   base2)
-   (selection      base7)
-   (builtin        dark-blue)
-   (comments       base6)
-   (doc-comments   base6)
-   (constants      orange)
-   (functions      blue)
-   (keywords       red)
-   (methods        dark-blue)
-   (operators      red)
-   (type           yellow)
-   (strings        light-yellow)
-   (variables      yellow)
-   (numbers        orange)
-   (region         base1)
-   (error          red)
-   (warning        yellow)
-   (success        green)
-   (vc-modified    vcmodified-blue)
-   (vc-added       green)
-   (vc-deleted     red)
-
-   ;; custom categories
-   (modeline-bg     base0)
-   (modeline-bg-alt base1)
-   (modeline-fg     base8)
-   (modeline-fg-alt base7)
-
-   (-modeline-pad
-    (when doom-mondo-padded-modeline
-      (if (integerp doom-mondo-padded-modeline) doom-mondo-padded-modeline 4))))
-
-  ;;;; Base theme face overrides
-  (((highlight &override) :foreground base8)
-   (lazy-highlight :background base4 :foreground fg :weight 'bold)
-   (mode-line
-    :background modeline-bg :foreground modeline-fg
-    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg)))
-   (mode-line-inactive
-    :background modeline-bg-alt :foreground modeline-fg-alt
-    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-alt)))
-   (tooltip :background base2 :foreground fg)
-
-   ;;;; all-the-icons
-   (all-the-icons-dblue    :foreground bottomline-blue)
-   ;;;; man <built-in>
-   (Man-overstrike :inherit 'bold :foreground magenta)
-   (Man-underline :inherit 'underline :foreground blue)
-   ;;;; centaur-tabs
-   (centaur-tabs-active-bar-face :background base6)
-   (centaur-tabs-selected-modified
-    :inherit 'centaur-tabs-selected :foreground fg :weight 'bold)
-   (centaur-tabs-unselected-modified
-    :inherit 'centaur-tabs-unselected :foreground fg :weight 'bold)
-   (centaur-tabs-modified-marker-selected
-    :inherit 'centaur-tabs-selected :foreground fg)
-   (centaur-tabs-modified-marker-unselected
-    :inherit 'centaur-tabs-unselected :foreground fg)
-   ;;;; company
-   (company-tooltip-selection     :background region)
-   ;;;; css-mode <built-in> / scss-mode
-   (css-proprietary-property :foreground orange)
-   (css-property             :foreground green)
-   (css-selector             :foreground blue)
-   ;;;; dashboard
-   (dashboard-heading :foreground green :weight 'bold)
-   ;;;; dired-k
-   (dired-k-commited :foreground base4)
-   (dired-k-modified :foreground vc-modified)
-   (dired-k-ignored :foreground cyan)
-   (dired-k-added    :foreground vc-added)
-   ;;;; doom-modeline
-   (doom-modeline-bar :background (if doom-mondo-blue-modeline base8 bottomline-blue))
-   (doom-modeline-buffer-file :inherit 'mode-line-emphasis :weight 'bold)
-   (doom-modeline-buffer-major-mode :inherit 'doom-modeline-buffer-path)
-   (doom-modeline-buffer-minor-mode :inherit 'mode-line-emphasis :weight 'bold)
-   (doom-modeline-buffer-modified :inherit 'mode-line-emphasis :weight 'bold)
-   (doom-modeline-buffer-path :inherit 'mode-line-emphasis :weight 'bold)
-   (doom-modeline-buffer-project-root :inherit 'mode-line-emphasis)
-   (doom-modeline-debug :inherit 'mode-line-emphasis)
-   (doom-modeline-evil-insert-state :foreground cyan)
-   (doom-modeline-evil-visual-state :foreground yellow)
-   (doom-modeline-info :inherit 'mode-line-emphasis)
-   (doom-modeline-lsp-success :inherit 'mode-line-emphasis :weight 'bold)
-   (doom-modeline-persp-name :inherit 'mode-line-emphasis :weight 'bold)
-   (doom-modeline-project-dir :inherit 'mode-line-emphasis :weight 'bold)
-   (doom-modeline-project-parent-dir :inherit 'mode-line-emphasis :weight 'bold)
-   (doom-modeline-urgent :inherit 'mode-line-emphasis)
-   (doom-modeline-warning :inherit 'mode-line-emphasis)
-   ;;;; doom-themes
-   (doom-themes-treemacs-root-face :foreground fg :weight 'ultra-bold :height 1.2)
-   (doom-themes-treemacs-file-face :foreground fg)
-   ;;;; ivy
-   (counsel-active-mode :foreground (doom-lighten base6 0.1))
-   (ivy-current-match :background bg)
-   (ivy-minibuffer-match-face-2 :foreground (doom-lighten base6 0.1) :weight 'extra-bold)
-   ;;;; js2-mode
-   (js2-jsdoc-tag              :foreground magenta)
-   (js2-object-property        :foreground cyan)
-   (js2-object-property-access :foreground cyan)
-   (js2-function-param         :foreground violet)
-   (js2-jsdoc-type             :foreground base8)
-   (js2-jsdoc-value            :foreground cyan)
-   ;;;; lsp-mode
-   (lsp-lens-face              :foreground base7 :height 0.8)
-   ;;;; org <built-in>
-   ((org-block &override) :background base2)
-   ((org-block-background &override) :background base2)
-   ((org-block-begin-line &override) :background base2)
-   ;;;; org-pomodoro
-   (org-pomodoro-mode-line :inherit 'mode-line-emphasis) ; unreadable otherwise
-   (org-pomodoro-mode-line-overtime :inherit 'org-pomodoro-mode-line)
-   (org-pomodoro-mode-line-break :inherit 'org-pomodoro-mode-line)
-   ;;;; rainbow-delimiters
-   (rainbow-delimiters-depth-1-face :foreground magenta)
-   (rainbow-delimiters-depth-2-face :foreground orange)
-   (rainbow-delimiters-depth-3-face :foreground green)
-   (rainbow-delimiters-depth-4-face :foreground cyan)
-   (rainbow-delimiters-depth-5-face :foreground violet)
-   (rainbow-delimiters-depth-6-face :foreground yellow)
-   (rainbow-delimiters-depth-7-face :foreground blue)
-   (rainbow-delimiters-depth-8-face :foreground teal)
-   (rainbow-delimiters-depth-9-face :foreground dark-cyan)
-   ;;;; rjsx-mode
-   (rjsx-tag :foreground blue)
-   (rjsx-attr :foreground cyan :slant 'italic :weight 'medium)
-   ;;;; treemacs
-   (treemacs-root-face :foreground fg :weight 'ultra-bold :height 1.2)
-   (treemacs-directory-face :foreground fg)
-   (treemacs-git-modified-face :foreground blue)))
-
-;;; doom-mondo-theme.el ends here
+(provide-theme 'mondo)

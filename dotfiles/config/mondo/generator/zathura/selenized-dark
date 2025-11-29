@@ -1,0 +1,11 @@
+set default-bg \#103c48
+set default-fg \#adbcbc
+
+set statusbar-bg \#184956
+set statusbar-fg \#cad8d9
+
+set recolor-lightcolor          \#103c48 
+set recolor-darkcolor           \#adbcbc
+set recolor true
+
+set render-loading true

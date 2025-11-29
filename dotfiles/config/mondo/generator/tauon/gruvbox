@@ -1,0 +1,124 @@
+# The Love Theme for Tauon Music Box
+# Version: 0.2.1
+# https://love.holllo.cc
+
+# Backgrounds
+
+29,32,33,255 player background (top panel)
+40,40,40,255 playlist panel
+40,40,40,255 side panel
+40,40,40,255 bottom panel
+40,40,40,255 gallery background
+
+# Playlist
+
+251,241,199,255 track line
+251,241,199,255 track time
+251,241,199,255 track index
+251,241,199,255 track artist
+251,241,199,255 album line
+
+189,174,147,255 track playing
+189,174,147,255 time playing
+189,174,147,255 index playing
+189,174,147,255 artist playing
+189,174,147,255 album playing
+
+204,36,29,255 track missing
+
+251,241,199,255 fav line
+251,241,199,255 folder line
+251,241,199,255 folder title
+
+29,32,33,255 playing highlight
+29,32,33,255 select highlight
+29,32,33,255 gallery highlight
+
+29,32,33,255 playing highlight
+29,32,33,255 select highlight
+29,32,33,255 gallery highlight
+
+40,40,40,255 column bar background
+
+# Bottom Panel
+
+251,241,199,255 bottom title
+
+251,241,199,255 buttons off
+251,241,199,255 buttons over
+189,174,147,255 buttons active
+
+251,241,199,255 playing time
+
+189,174,147,255 seek bar
+189,174,147,255 volume bar
+29,32,33,255 seek bg
+29,32,33,255 volume bg
+189,174,147,255 scroll bar
+
+251,241,199,255 mode off
+251,241,199,255 mode over
+189,174,147,255 mode on
+
+# Top Panel
+
+189,174,147,255 tab active text
+251,241,199,255 tab text
+29,32,33,255 tab background
+29,32,33,255 tab over
+29,32,33,255 tab active background
+29,32,33,255 music vis
+
+# Side Panel
+
+251,241,199,255 title info
+251,241,199,255 extra info
+29,32,33,255 art border
+
+# Mini Mode
+
+29,32,33,255 mini bg
+29,32,33,255 mini border
+189,174,147,255 mini text 1
+189,174,147,255 mini text 2
+
+# Menu
+
+29,32,33,255 menu background
+29,32,33,255 menu highlight
+189,174,147,255 menu text
+251,241,199,255 menu disable text
+29,32,33,255 menu border
+251,241,199,255 menu icons
+
+# Miscellaneous
+
+40,40,40,255 playlist box background
+40,40,40,255 artist bio background
+251,241,199,255 artist bio text
+
+# Dialog Box
+
+40,40,40,255 box background
+31,23,49 box border
+31,23,49 box title text
+31,23,49 box text label
+31,23,49 box text normal
+31,23,49 box sub text
+31,23,49 box input text
+31,23,49 box text border
+31,23,49 box button text normal
+189,174,147,255 box button text highlight
+189,174,147,255 box button background normal
+20,77,90 box button background highlight
+31,23,49 box button border
+
+# Window
+
+29,32,33,255 window frame
+242,239,255 window buttons background
+31,23,49 window buttons on
+31,23,49 window buttons icon off
+189,174,147,255 window buttons icon over
+189,174,147,255 window button x on
+31,23,49 window button x off

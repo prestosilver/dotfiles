@@ -16,6 +16,6 @@
 # target can be an (absolute) file path to where
 # the file will be copied when a theme is applied.
 
-target="$HOME/.config/alacritty/theme.yml"
+target="$HOME/.config/alacritty/theme.toml"
 
 # syntax:ssHash

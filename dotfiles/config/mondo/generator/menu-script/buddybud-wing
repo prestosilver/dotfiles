@@ -1,0 +1,14 @@
+#!/bin/bash
+exec bemenu --fn "Wingdings 14" \
+    --tb '#252323' --tf '#bdae93' \
+    --fb '#252323' --ff '#bdae93' \
+    --cb '#f9f5d7' --cf '#458588' \
+    --nb '#32302F' --nf '#bdae93' \
+    --hb '#458588' --hf '#f9f5d7' \
+    --fbb '#458588' --fbf '#f9f5d7' \
+    --sb '#458588' --sf '#f9f5d7' \
+    --ab '#32302F' --af '#bdae93' \
+    --scb '#458588' --scf '#f9f5d7' \
+    --bdr '#32302F' \
+    --hp 10 --list 15 \
+    -B 2 --fixed-height --counter always

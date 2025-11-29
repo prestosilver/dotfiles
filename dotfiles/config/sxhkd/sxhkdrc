@@ -16,7 +16,7 @@ super + a
 super + c
   camtoggle
 super + w
-  firefox
+  chromium
 super + shift + s
   scrot -s
 Print
@@ -26,23 +26,23 @@ super + shift + v
 
 # terminal apps
 super + v
-  st -T cava -c cava -e cava
+  kitty -T cava --class cava cava
 super + i
-  st -T htop -c htop -e /usr/bin/htop
+  kitty -T htop --class htop /usr/bin/htop
 super + e
-  st -T neomutt -c neomutt -e /usr/bin/neomutt
+  kitty -T neomutt --class neomutt /usr/bin/neomutt
 super + m
-  st -T ncmpcpp -c ncmpcpp -e /usr/bin/spt
+  kitty -T ncmpcpp --class ncmpcpp /usr/bin/spt
 super + {_,shift +} r
-  st -c Files{D,B} -T Files -e /usr/bin/ranger
+  kitty -T Files --class Files{D,B} /usr/bin/ranger
 super + shift + y
   sxiv -s h -b ~/pix/wallpapers/currentwall
 
 # terminals
 super + {_,shift +,control +} Return
-  st -c st{A,B,F}
+  kitty --class st{A,B,F}
 super + shift + c
-  st -c stC
+  kitty --class stC
 
 # sxhkd
 super + F7

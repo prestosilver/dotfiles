@@ -1,0 +1,37 @@
+fg #030826
+bg #7076f8
+
+base00 #15152f
+base01 #0b164f
+base02 #172777
+base03 #1f2b68
+
+base0 #e7e1e3
+base1 #47bc4f
+base2 #c5a9a7
+base3 #FFEFFE
+
+red #e8aeae
+ora #e8cfae
+grn #bae8ae
+ylw #e3e8ae
+blu #aee5e8
+mag #dbaee8
+vio #e8aed5
+cyn #aec9e8
+
+fg1         fg
+fg2         base0
+bg1         bg
+bg2         base03
+
+dark1       base00
+light1      base1
+
+act1        base03
+act2        fg
+act3        base03
+
+ina1        base01
+ina2        base1
+ina3        base00

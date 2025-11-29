@@ -1,0 +1,56 @@
+Xft.dpi: 144
+*.dpi: 144
+
+st.foreground:             #D8DEE9
+st.background:             #2E3440
+st.cursorColor:            #D8DEE9
+st.cursorColor2:           #2E3440
+st.borderColor:            #2E3440
+
+st.color0:                 #2E3440
+st.color8:                 #D8DEE9
+st.color1:                 #BF616A
+st.color9:                 #81A1C1
+st.color2:                 #A3BE8C
+st.color10:                #ECEFF4
+st.color3:                 #EBCB8B
+st.color11:                #f9f5d7
+st.color4:                 #5E81AC
+st.color12:                #B48EAD
+st.color5:                 #D08770
+st.color13:                #3B4252
+st.color6:                 #88C0D0
+st.color14:                #434C5E
+st.color7:                 #D8DEE9
+st.color15:                #4C566A
+
+*.coloract1:              #3B4252
+*.coloract2:              #f9f5d7
+*.colorina1:              #434C5E
+*.colorina2:              #D8DEE9
+
+
+budwm.normbordercolor:      #4C566A
+budwm.normbgcolor:          #434C5E
+budwm.normfgcolor:          #D8DEE9
+budwm.selbordercolor:       #4C566A
+budwm.selbgcolor:           #3B4252
+budwm.selfgcolor:           #f9f5d7
+
+st.borderpx:          20
+st.alpha: 1
+
+*.font:       ComicShannsMono Nerd Font Mono:size=14:antialias=true
+! #ComicShannsMono Nerd Font Mono:size=12:antialias=true
+st.font:       ComicShannsMono Nerd Font Mono:size=14:antialias=true
+*boldFont:       ComicShannsMono Nerd Font Mono:size=14:antialias=true, Twitter Color Emoji:size=12:antialias=true
+*italicFont:     
+*boldItalicFont: 
+
+
+dmenu.background: #3B4252
+dmenu.foreground: #f9f5d7
+dmenu.selbackground: #434C5E
+dmenu.selforeground: #D8DEE9
+
+! syntax:ssExcla

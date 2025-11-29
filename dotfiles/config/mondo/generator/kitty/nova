@@ -1,0 +1,33 @@
+font_family      family="FiraCode Nerd Font Mono" style="Bold"
+font_size        14 
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+background_opacity 1.0
+window_margin_width 10
+
+background #556873
+foreground #D8DEE9
+cursor #D8DEE9
+selection_background #899BA6
+color0 #556873
+color8 #D8DEE9
+color1 #BF616A
+color9 #81A1C1
+color2 #A3BE8C
+color10 #ECEFF4
+color3 #EBCB8B
+color11 #f9f5d7
+color4 #9A93E1
+color12 #B48EAD
+color5 #D08770
+color13 #556873
+color6 #88C0D0
+color14 #6A7D89
+color7 #D8DEE9
+color15 #899BA6
+selection_foreground #E5E9F0
+
+enable_audio_bell no
+confirm_os_window_close 0

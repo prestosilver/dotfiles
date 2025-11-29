@@ -18,6 +18,6 @@ this_theme="${this_file%.*}"
 # To source the settings file one could use this:
 # source "${this_dir}/mondo-settings"
 
-gsettings set org.gnome.desktop.interface gtk-theme "$this_theme"
-
-gsettings set org.gnome.desktop.interface icon-theme "$this_theme"
+# gsettings set org.gnome.desktop.interface gtk-theme "$this_theme"
+# 
+# gsettings set org.gnome.desktop.interface icon-theme "$this_theme"

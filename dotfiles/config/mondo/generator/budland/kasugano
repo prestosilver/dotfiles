@@ -1,0 +1,13 @@
+-- color theme
+funcs = require("conpositor.funcs")
+
+-- generated with mondo
+session:set_color(true, "border", "#E54F5DFF")
+session:set_color(true, "background", "#E54F5DFF")
+session:set_color(true, "foreground", "#FFFFFFFF")
+
+session:set_color(false, "border", "#9A1C3EFF")
+session:set_color(false, "background", "#9A1C3EFF")
+session:set_color(false, "foreground", "#ffffffFF")
+
+funcs.set_font_pt("ComicShannsMono Nerd Font Mono", 14)

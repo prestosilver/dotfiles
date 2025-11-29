@@ -46,7 +46,7 @@ Alacritty is a terminal emulator
 - Tiling
 - Container focused workflow
 ** Keybinds
-- TODO!
+Ya who knows, just find it in the conf
 * FISH
 #+ATTR_HTML: :width 300px
 [[./assets/fish.png]]
@@ -59,6 +59,8 @@ Mondo is a theme manager
 - Automatic system theme application
 * Editors
 ** Vim
-I normally use neovide + neovim
+I normally use neovide + neovim for most languages
+** VScode
+When editing code in nim I use vscode
 ** Emacs
 Sometimes I use emacs

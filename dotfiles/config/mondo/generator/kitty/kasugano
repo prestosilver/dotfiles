@@ -1,0 +1,33 @@
+font_family      family="ComicShannsMono Nerd Font Mono" style="Regular"
+font_size        14 
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+background_opacity 1.0
+window_margin_width 10
+
+background #1b1b1b
+foreground #ffffff
+cursor #ffffff
+selection_background #E54F5D
+color0 #1b1b1b
+color8 #E54F5D
+color1 #899AFF
+color9 #52AD91
+color2 #3EA290
+color10 #fefefe
+color3 #B0EAD9
+color11 #FFFFFF
+color4 #31658C
+color12 #8292B2
+color5 #596196
+color13 #4D4D4D
+color6 #95A7CC
+color14 #8f3f71
+color7 #ffffff
+color15 #32302F
+selection_foreground #FFFFFF
+
+enable_audio_bell no
+confirm_os_window_close 0

@@ -6,10 +6,10 @@ export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO GPG_AGENT_SOCK
 blueman-applet &
 nm-applet &
 flameshot &
-bwp -r &
+bwp &
 devmon &
+sxhkd &
 killall -KILL python3
-# sxhkd &
 dump_xsettings > $HOME/.xsettingsd 
 killall -HUP xsettingsd 
 xsettingsd &

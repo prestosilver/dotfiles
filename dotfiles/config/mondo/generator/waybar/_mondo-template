@@ -1,47 +1,49 @@
 * {
-    font-size: 14px;
-    font-family: CaskaydiaCove NFP;
-    font-weight: bold;
-    min-height: 20px;
-    color: %%act2%%;
+  font-size: 12pt;
+  font-family: %%guifontface1%%;
+  font-weight: bold;
+  color: %%act2%%;
 }
 
 window#waybar {
-    background: %%act1%%;
-    color: %%act2%%;
+  background: %%act1%%;
+  color: %%act2%%;
 }
 
 #window {
-    background: %%act1%%;
-    color: %%act2%%;
+  background: %%act1%%;
+  color: %%act2%%;
 }
 
 #custom-spacer {
-    padding: 0 5px;
-    color: %%act3%%;
-}
-
-#workspaces button {
-    padding: 0 10px;
-    background: transparent;
-    color: white;
-    border-bottom: 2px solid transparent;
-}
-
-#workspaces button.focused {
-    background: %%ina1%%;
-    border-bottom: 2px solid white;
+  padding: 0 3px;
+  color: %%sel1%%;
 }
 
 #cava {
-  padding: 0 5px;
+  padding: 0 3px;
   background: %%bg1%%;
   color: %%act1%%;
 }
 
-#title.lt {
+#workspaces,
+#workspaces button {
+  padding-left: 5px;
+  background-color: %%act1%%;
+  border: 0;
+  color: %%ina2%%;
+}
+
+#custom-conpositor-layout {
   background-color: %%ina1%%;
   color: %%ina2%%;
+  padding: 5px 3px;
+}
+
+#custom-conpositor-tag {
+  background-color: %%ina1%%;
+  color: %%ina2%%;
+  padding-right: 5px;
 }
 
 #pulseaudio.muted {
@@ -54,7 +56,7 @@ window#waybar {
 }
 
 #clock {
-  padding-right: 5px;
+  padding-left: 5px;
 }
 
 #disk,
@@ -63,40 +65,37 @@ window#waybar {
 #user,
 #pulseaudio,
 #custom-spotify {
-    background-color: %%act1%%;
-    color: %%act2%%;
+  background-color: %%act1%%;
+  color: %%act2%%;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 #tray {
-    background-color: %%ina1%%;
-    color: %%ina2%%;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-#clock {
-    background-color: %%ina1%%;
-    color: %%ina2%%;
+  background-color: %%ina1%%;
+  color: %%ina2%%;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 #battery.charging {
-    background-color: %%grn%%;
-    color: %%ina1%%;
+  background-color: %%grn%%;
+  color: %%ina1%%;
 }
 
 @keyframes blink {
-    to {
-        background-color: %%ina1%%;
-        color: %%red%%;
-    }
+  to {
+    background-color: %%ina1%%;
+    color: %%red%%;
+  }
 }
 
 #battery.warning:not(.charging) {
-    background: %%red%%;
-    color: %%ina1%%;
-    animation-name: blink;
-    animation-duration: 1.0s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  background: %%red%%;
+  color: %%ina1%%;
+  animation-name: blink;
+  animation-duration: 1.0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

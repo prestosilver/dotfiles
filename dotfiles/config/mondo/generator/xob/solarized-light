@@ -1,0 +1,72 @@
+default = {
+  x = {relative = 1.0; offset = -75;};
+  padding = 0;
+  border = 2;
+  outline = 0;
+  thickness = 24;
+  color = {
+    normal = {
+      fg = "#4e4e4e";
+      bg = "#ffffd7";
+      border = "#808080";
+    };
+    alt = {
+      fg = "#8a8a8a";
+      bg = "#ffffd7";
+      border = "#808080";
+    };
+    overflow = {
+      fg = "#4e4e4e";
+      bg = "#ffffd7";
+      border = "#dc322f";
+    };
+  };
+};
+mic = {
+  x = {relative = 1.0; offset = -103;};
+  padding = 0;
+  border = 2;
+  outline = 0;
+  thickness = 24;
+  color = {
+    normal = {
+      fg = "#4e4e4e";
+      bg = "#ffffd7";
+      border = "#808080";
+    };
+    alt = {
+      fg = "#8a8a8a";
+      bg = "#ffffd7";
+      border = "#808080";
+    };
+    overflow = {
+      fg = "#4e4e4e";
+      bg = "#ffffd7";
+      border = "#dc322f";
+    };
+  };
+};
+backlight = {
+  x = {relative = 1.0; offset = -131;};
+  padding = 0;
+  border = 2;
+  outline = 0;
+  thickness = 24;
+  color = {
+    normal = {
+      fg = "#4e4e4e";
+      bg = "#ffffd7";
+      border = "#808080";
+    };
+    alt = {
+      fg = "#8a8a8a";
+      bg = "#ffffd7";
+      border = "#808080";
+    };
+    overflow = {
+      fg = "#4e4e4e";
+      bg = "#ffffd7";
+      border = "#dc322f";
+    };
+  };
+};

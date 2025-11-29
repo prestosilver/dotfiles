@@ -47,12 +47,3 @@ wall bg
 cursortheme     Adwaita  
 icontheme       ePapirus
 gtktheme        buddybud 
-
-terminalfontface1 CascadiaMonoPL Nerd Font Mono
-terminalfontsize1 12
-terminalfontface2 Twitter Color Emoji
-terminalfontsize2 12
-
-guifontface1      CaskaydiaCovePL Nerd Font
-guifontsize1      12
-guifontsize2      10

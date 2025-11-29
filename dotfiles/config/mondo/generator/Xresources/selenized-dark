@@ -1,0 +1,52 @@
+st.foreground:             #adbcbc
+st.background:             #103c48
+st.cursorColor:            #adbcbc
+st.cursorColor2:           #103c48
+st.borderColor:            #103c48
+
+st.color0:                 #103c48
+st.color8:                 #2d5b69
+st.color1:                 #fa5750
+st.color9:                 #ff665c
+st.color2:                 #75b938
+st.color10:                #adbcbc
+st.color3:                 #dbb32d
+st.color11:                #102931
+st.color4:                 #4695f7
+st.color12:                #ff84cd
+st.color5:                 #f275be
+st.color13:                #72898f
+st.color6:                 #41c7b9
+st.color14:                #2d5b69
+st.color7:                 #adbcbc
+st.color15:                #cad8d9
+
+*.coloract1:              #184956
+*.coloract2:              #cad8d9
+*.colorina1:              #103c48
+*.colorina2:              #adbcbc
+
+
+budwm.normbordercolor:      #184956
+budwm.normbgcolor:          #103c48
+budwm.normfgcolor:          #adbcbc
+budwm.selbordercolor:       #184956
+budwm.selbgcolor:           #184956
+budwm.selfgcolor:           #cad8d9
+
+st.borderpx:          20
+st.alpha: 1
+
+*.font:       CascadiaMonoPL Nerd Font Mono:size=12:antialias=true
+! #:size=10:antialias=true
+st.font:       CascadiaMonoPL Nerd Font Mono:size=12:antialias=true
+*boldFont:       CascadiaMonoPL Nerd Font Mono:size=12:antialias=true, Twitter Color Emoji:size=12:antialias=true
+*italicFont:     
+*boldItalicFont: 
+
+dmenu.background: #184956
+dmenu.foreground: #cad8d9
+dmenu.selbackground: #103c48
+dmenu.selforeground: #adbcbc
+
+! syntax:ssExcla

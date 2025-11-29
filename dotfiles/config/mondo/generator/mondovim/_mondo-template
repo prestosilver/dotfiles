@@ -71,7 +71,7 @@ hi LineNr guibg=%%ina1%% guifg=%%ina2%% gui=none
 hi StatusLineNC	guibg=%%act1%% guifg=%%act2%% gui=bold
 hi User1 guibg=%%act1%% guifg=%%act2%%
 "hi Title		
-"hi Visual		
+hi Visual guibg=%%sel1%% guifg=%%sel2%%
 "hi VisualNOS	
 "hi WarningMsg	
 "hi WildMenu	
@@ -81,13 +81,17 @@ hi User1 guibg=%%act1%% guifg=%%act2%%
 
 " syntax highlighting groups
 hi Comment gui=italic guifg=%%grn%%
-hi Constant guifg=%%ylw%%
+hi Constant guifg=%%blu%% gui=bold
 hi Identifier guifg=%%mag%% gui=bold
 hi Statement guifg=%%fg%%
 hi PreProc guifg=%%blu%%
-hi Type	guifg=%%cyn%%
+hi Type	guifg=%%cyn%% gui=bold
 hi Special guifg=%%vio%%
 hi Underlined	guifg=%%blu%% gui=underline
+hi Function guifg=%%cyn%%
+hi @variable guifg=%%mag%%
+hi Operator guifg=%%fg%%
+hi DiagnosticDeprecated cterm=strikethrough gui=strikethrough guisp=%%red%% 
 "hi Ignore		
 "hi Error		
 "hi Todo		
@@ -120,3 +124,5 @@ hi BufferOffset guibg=%%bg%% guifg=%%fg%%
 
 hi Pmenu guibg=%%ina1%% guifg=%%ina2%%
 hi PmenuSel guibg=%%act1%% guifg=%%act2%%
+
+lua vim.opt.guifont="%%terminalfontface1%%:h%%terminalfontsize1%%" .. (("%%terminalfontstyle%%" == "Bold") and ":b" or "")

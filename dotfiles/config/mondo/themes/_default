@@ -1,25 +1,41 @@
-#define fg #bdae93
-#define bg #252323
+fg #bdae93
+bg #252323
 
-#define base00 #252323
-#define base01 #8f3f71
-#define base02 #427b58
-#define base03 #32302F
+base00 #252323
+base01 #8f3f71
+base02 #427b58
+base03 #32302F
 
-#define base0 #b57614
-#define base1 #bdae93
-#define base2 #ebdbb2
-#define base3 #f9f5d7
+base0 #b57614
+base1 #bdae93
+base2 #ebdbb2
+base3 #f9f5d7
 
-#define red #cc241d
-#define ora #9d0006
-#define grn #98971a
-#define ylw #d79921
-#define blu #458588
-#define mag #b16286
-#define vio #076678
-#define cyn #689d6a
+red #cc241d
+ora #9d0006
+grn #98971a
+ylw #d79921
+blu #458588
+mag #b16286
+vio #076678
+cyn #689d6a
+
 white #ffffff
 black #000000
 
 wall ina1
+
+sel1     base00
+sel2     base3
+
+terminalfontface1 CascadiaMonoPL Nerd Font Mono
+terminalfontsize1 14
+terminalfontface2 CascadiaMonoPL Nerd Font Mono
+terminalfontsize2 14
+
+terminalfontstyle Regular
+
+guifontface1      CascadiaMonoPL Nerd Font Mono
+guifontsize1      14
+guifontface2      CascadiaMonoPL Nerd Font Mono
+guifontsize2      14

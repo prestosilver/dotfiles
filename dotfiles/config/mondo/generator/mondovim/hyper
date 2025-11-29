@@ -1,0 +1,128 @@
+" Vim color file
+" Maintainer:   Your name <youremail@something.com>
+" Last Change:  
+" URL:		
+
+" cool help screens
+" :he group-name
+" :he highlight-groups
+" :he gui-colors
+
+" your pick:
+set background=dark	" or light
+hi clear
+if exists("syntax_on")
+    syntax reset
+endif
+let g:colors_name="mondo"
+set termguicolors
+
+hi Normal guifg=#c5a9a7 guibg=#15152f
+
+" OR
+
+" highlight clear Normal
+" set background&
+" highlight clear
+" if &background == "light"
+"   highlight Error ...
+"   ...
+" else
+"   highlight Error ...
+"   ...
+" endif
+
+" A good way to see what your colorscheme does is to follow this procedure:
+" :w 
+" :so % 
+"
+" Then to see what the current setting is use the highlight command.  
+" For example,
+" 	:hi Cursor
+" gives
+"	Cursor         xxx guifg=bg guibg=fg 
+ 	
+" Uncomment and complete the commands you want to change from the default.
+
+"hi Cursor		
+"hi CursorIM	
+hi Directory guifg=#c5a9a7
+"hi DiffAdd		
+"hi DiffChange	
+"hi DiffDelete	
+"hi DiffText	
+"hi ErrorMsg	
+hi VertSplit guibg=#3d6481 guifg=#15152f
+hi EndOfBuffer guibg=#15152f guifg=#15152f
+"hi Folded		
+"hi FoldColumn	
+"hi IncSearch	
+hi LineNr guibg=#15152f guifg=#c5a9a7 gui=bold
+hi CursorLineNr guibg=#15152f guifg=#254f64 gui=bold
+"hi ModeMsg		
+hi MoreMsg guibg=#15152f guifg=#c5a9a7 gui=reverse
+hi NonText guifg=#c87296		
+hi Question guibg=#15152f guifg=#c5a9a7
+hi Search guibg=#254f64 guifg=#FFEFFE
+hi SpecialKey	guifg=#c87296
+hi StatusLine guibg=#254f64 guifg=#FFEFFE	gui=bold
+hi SignColumn guibg=#3d6481 guifg=#c5a9a7 gui=none
+hi LineNr guibg=#3d6481 guifg=#c5a9a7 gui=none
+hi StatusLineNC	guibg=#254f64 guifg=#FFEFFE gui=bold
+hi User1 guibg=#254f64 guifg=#FFEFFE
+"hi Title		
+hi Visual guibg=#15152f guifg=#FFEFFE
+"hi VisualNOS	
+"hi WarningMsg	
+"hi WildMenu	
+"hi Menu		
+"hi Scrollbar	
+"hi Tooltip		
+
+" syntax highlighting groups
+hi Comment gui=italic guifg=#3d6481
+hi Constant guifg=#412d46 gui=bold
+hi Identifier guifg=#ff62a6 gui=bold
+hi Statement guifg=#c5a9a7
+hi PreProc guifg=#412d46
+hi Type	guifg=#6dc4a2 gui=bold
+hi Special guifg=#c87296
+hi Underlined	guifg=#412d46 gui=underline
+hi Function guifg=#6dc4a2
+hi @variable guifg=#ff62a6
+hi Operator guifg=#c5a9a7
+hi DiagnosticDeprecated cterm=strikethrough gui=strikethrough guisp=#546039 
+"hi Ignore		
+"hi Error		
+"hi Todo		
+
+hi SyntasticErrorLine guibg=#546039
+hi SyntasticErrorSign guibg=#15152f guifg=#546039
+hi SyntasticWarningLine guibg=#254f64
+hi SyntasticWarningSign guibg=#15152f guifg=#254f64
+hi String guifg=#3d6481
+
+hi TabLine guibg=#3d6481 guifg=#15152f
+
+hi BufferCurrent guibg=#254f64 guifg=#FFEFFE
+hi BufferCurrentMod guibg=#254f64 guifg=#FFEFFE
+hi BufferCurrentSign guibg=#254f64 guifg=#15152f
+hi BufferCurrentSignRight guibg=#254f64 guifg=#15152f
+
+hi BufferVisible guibg=#3d6481 guifg=#c5a9a7
+hi BufferVisibleMod guibg=#3d6481 guifg=#c5a9a7
+hi BufferVisibleSign guibg=#3d6481 guifg=#15152f
+hi BufferVisibleSignRight guibg=#3d6481 guifg=#15152f
+
+hi BufferInactive guibg=#3d6481 guifg=#c5a9a7
+hi BufferInactiveMod guibg=#3d6481 guifg=#c5a9a7
+hi BufferInactiveSign guibg=#3d6481 guifg=#15152f
+hi BufferInactiveSignRight guibg=#3d6481 guifg=#15152f
+
+hi BufferTabpageFill guibg=#3d6481 guifg=#c5a9a7
+hi BufferOffset guibg=#15152f guifg=#c5a9a7
+
+hi Pmenu guibg=#3d6481 guifg=#c5a9a7
+hi PmenuSel guibg=#254f64 guifg=#FFEFFE
+
+lua vim.opt.guifont="CascadiaMonoPL Nerd Font Mono:h14" .. (("Regular" == "Bold") and ":b" or "")

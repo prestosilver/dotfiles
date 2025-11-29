@@ -1,0 +1,56 @@
+fg #D8DEE9
+bg #556873
+
+base00 #3C4C55
+base01 #556873
+base02 #6A7D89
+base03 #899BA6
+
+base0 #D8DEE9
+base1 #E5E9F0
+base2 #ECEFF4
+base3 #f9f5d7
+
+red #BF616A
+ora #81A1C1
+grn #A3BE8C
+ylw #EBCB8B
+blu #9A93E1
+mag #D08770
+vio #B48EAD
+cyn #88C0D0
+
+fg1         fg
+fg2         base2
+bg1         bg
+bg2         base01
+
+dark1       base02
+light1      base03
+
+act1        base03
+act2        base1
+act3        base02
+
+ina1        base02
+ina2        fg
+ina3        base02
+
+sel1     ora
+sel2     fg
+
+cursortheme     Adwaita  
+icontheme       ePapirus
+gtktheme        buddybud 
+
+terminalfontstyle Bold
+
+terminalfontface1 FiraCode Nerd Font Mono
+terminalfontsize1 14
+terminalfontface2 Twitter Color Emoji
+terminalfontsize2 14
+
+guifontface1      FiraCode Nerd Font Mono
+guifontsize1      14
+guifontface2      FiraCode Nerd Font Mono
+guifontsize2      14

@@ -1,0 +1,57 @@
+hi act1 #272822
+hi act2 #F1EBEB
+hi act3 #8FC029
+hi ina1 #272822
+hi ina2 #F1EBEB
+hi ina3 #F1EBEB
+hi grn #8FC029
+hi red #DC2566
+hi ylw #D4C96E
+hi blu #55BCCE
+hi mag #AE82FF
+hi cyn #56B7A5
+hi vio #9358FE
+hi bg #272822
+hi fg #F1EBEB
+hi dark #252323
+
+hi line %act1
+hi lineNumberSplit %ina3
+hi lineNumberFg %ina2
+hi lineNumberBg %ina1
+hi cursor %act1
+hi statusFg %act2
+hi statusBg %act1
+hi error %red
+hi warn %ylw
+
+hi constant %blu
+hi identifier %mag
+hi function %cyn
+hi type %cyn
+
+hi comment %dark
+hi decorator %number 
+hi enumMember %constant
+hi enum %constant
+hi interface %type
+hi keyword %identifier
+hi macro %ylw
+hi method %function
+hi namespace %fg
+hi number %constant
+hi operator %fg
+hi parameter %fg
+hi property %identifier
+hi string %constant
+hi struct %type
+hi typeParameter %type
+hi variable %vio
+hi builtin %function
+hi keywordLiteral %keyword
+
+hi log_error %red
+hi log_warn %ylw
+hi log_info %grn
+
+hi split %ina2

@@ -1,0 +1,13 @@
+-- color theme
+funcs = require("conpositor.funcs")
+
+-- generated with mondo
+session:set_color(true, "border", "#32302FFF")
+session:set_color(true, "background", "#458588FF")
+session:set_color(true, "foreground", "#f9f5d7FF")
+
+session:set_color(false, "border", "#32302FFF")
+session:set_color(false, "background", "#32302FFF")
+session:set_color(false, "foreground", "#bdae93FF")
+
+funcs.set_font_pt("Wingdings", 14)

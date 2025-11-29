@@ -11,14 +11,14 @@ base1 #9F7A39
 base2 #D29E43
 base3 #BD9B61
 
-red #cc241d
-ora #9d0006
-grn #98971a
-ylw #d79921
-blu #458588
-mag #b16286
-vio #076678
-cyn #689d6a
+red #ff1900
+ora #ba4a00
+grn #2cb500
+ylw #0080a1
+blu #6556ff
+mag #fa56ff
+vio #be56ff
+cyn #0093dc
 
 fg1         fg
 fg2         base2
@@ -44,12 +44,3 @@ wall    ina1
 cursortheme     Adwaita  
 icontheme       ePapirus
 gtktheme        buddybud 
-
-terminalfontface1 CaskaydiaCovePL Nerd Font
-terminalfontsize1 12
-terminalfontface2 Twitter Color Emoji
-terminalfontsize2 12
-
-guifontface1      CaskaydiaCovePL Nerd Font
-guifontsize1      12
-guifontsize2      10

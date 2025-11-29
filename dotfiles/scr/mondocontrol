@@ -49,7 +49,7 @@ select_wallpaper() {
 
   newwall="$(
     mondo -l themes \
-    | dmenu 
+    | menu 
   )"
 
   [[ -n $newwall ]] && {
@@ -82,7 +82,7 @@ rename_wallpaper() {
         --width   350        \
 
     else
-      dmenu
+      menu
     fi
 
   )"

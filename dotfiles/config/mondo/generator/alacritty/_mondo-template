@@ -1,28 +1,27 @@
-colors:
-    primary:
-        background: '%%bg%%'
-        foreground: '%%fg%%'
+[colors.bright]
+black = "%%bg%%"
+blue = "%%blu%%"
+cyan = "%%cyn%%"
+green = "%%grn%%"
+magenta = "%%mag%%"
+red = "%%red%%"
+white = "%%fg%%"
+yellow = "%%ylw%%"
 
-    cursor:
-        text: '%%act1%%'
-        cursor: '%%fg%%'
+[colors.cursor]
+cursor = "%%fg%%"
+text = "%%bg%%"
 
-    normal:
-        black: '%%bg%%'
-        red: '%%red%%'
-        green: '%%grn%%'
-        yellow: '%%ylw%%'
-        blue: '%%blu%%'
-        magenta: '%%mag%%'
-        cyan: '%%cyn%%'
-        white: '%%fg%%'
+[colors.normal]
+black = "%%bg%%"
+blue = "%%blu%%"
+cyan = "%%cyn%%"
+green = "%%grn%%"
+magenta = "%%mag%%"
+red = "%%red%%"
+white = "%%fg%%"
+yellow = "%%ylw%%"
 
-    bright:
-        black: '%%base0%%'
-        red: '%%ora%%'
-        green: '%%base2%%'
-        yellow: '%%base3%%'
-        blue: '%%vio%%'
-        magenta: '%%base01%%'
-        cyan: '%%base02%%'
-        white: '%%base03%%'
+[colors.primary]
+background = "%%bg%%"
+foreground = "%%fg%%"

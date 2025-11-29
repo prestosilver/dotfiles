@@ -1,0 +1,14 @@
+#!/bin/bash
+exec bemenu --fn "ComicShannsMono Nerd Font Mono 14" \
+    --tb '#2E3440' --tf '#D8DEE9' \
+    --fb '#2E3440' --ff '#D8DEE9' \
+    --cb '#f9f5d7' --cf '#3B4252' \
+    --nb '#434C5E' --nf '#D8DEE9' \
+    --hb '#3B4252' --hf '#f9f5d7' \
+    --fbb '#3B4252' --fbf '#f9f5d7' \
+    --sb '#3B4252' --sf '#f9f5d7' \
+    --ab '#434C5E' --af '#D8DEE9' \
+    --scb '#3B4252' --scf '#f9f5d7' \
+    --bdr '#4C566A' \
+    --hp 10 --list 15 \
+    -B 2 --fixed-height --counter always

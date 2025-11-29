@@ -1,0 +1,54 @@
+fg #D8DEE9
+bg #2E3440
+
+base00 #2E3440
+base01 #3B4252
+base02 #434C5E
+base03 #4C566A
+
+base0 #D8DEE9
+base1 #E5E9F0
+base2 #ECEFF4
+base3 #f9f5d7
+
+red #BF616A
+ora #81A1C1
+grn #A3BE8C
+ylw #EBCB8B
+blu #5E81AC
+mag #D08770
+vio #B48EAD
+cyn #88C0D0
+
+fg1         fg
+fg2         base2
+bg1         bg
+bg2         base03
+
+dark1       base00
+light1      base3
+
+act1        base01
+act2        base3
+act3        base03
+
+ina1        base02
+ina2        fg
+ina3        base03
+
+sel1     base00
+sel2     base3
+
+cursortheme     Adwaita  
+icontheme       ePapirus
+gtktheme        buddybud 
+
+terminalfontface1 ComicShannsMono Nerd Font Mono
+terminalfontsize1 16
+terminalfontface2 Twitter Color Emoji
+terminalfontsize2 16
+
+guifontface1      ComicShannsMono Nerd Font Mono
+guifontsize1      16
+guifontface2      ComicShannsMono Nerd Font Mono
+guifontsize2      16

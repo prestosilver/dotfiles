@@ -1,16 +1,21 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR ELECTRON_OZONE_PLATFORM_HINT:wayland
 SETUVAR --path PATH:/home/john/scr/statusbar\x1e/home/john/scr\x1e/home/john/\x2enimble/bin\x1e/home/john/\x2elocal/slam/bin\x1e/home/john/\x2ecargo/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/john/\x2elocal/bin
-SETUVAR __fish_initialized:3400
+SETUVAR __done_enabled:\x1d
+SETUVAR __done_min_cmd_duration:500
+SETUVAR __done_notification_command:dunstify\x20\x24title\x20\x24message
+SETUVAR __fish_initialized:3800
 SETUVAR _fish_abbr_cls:clear
 SETUVAR _fisher_franciscolourenco_2F_done_files:\x7e/\x2econfig/fish/conf\x2ed/done\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_kidonng_2F_zoxide_2E_fish_files:\x7e/\x2econfig/fish/functions/__zoxide_cd\x2efish\x1e\x7e/\x2econfig/fish/functions/__zoxide_pwd\x2efish\x1e\x7e/\x2econfig/fish/functions/__zoxide_z\x2efish\x1e\x7e/\x2econfig/fish/functions/__zoxide_z_complete\x2efish\x1e\x7e/\x2econfig/fish/functions/__zoxide_zi\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/zoxide\x2efish
 SETUVAR _fisher_plugins:kidonng/zoxide\x2efish\x1ejorgebucaran/fisher\x1efranciscolourenco/done
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_color_autosuggestion:555
+SETUVAR fish_color_autosuggestion:yellow
 SETUVAR fish_color_cancel:\x2d\x2dreverse
-SETUVAR fish_color_command:blue
+SETUVAR fish_color_comm:white
+SETUVAR fish_color_command:cyan\x1e\x2d\x2dbold
 SETUVAR fish_color_comment:red
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
@@ -21,13 +26,14 @@ SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:normal
 SETUVAR fish_color_host_remote:\x1d
 SETUVAR fish_color_keyword:\x1d
-SETUVAR fish_color_normal:normal
+SETUVAR fish_color_match:white
+SETUVAR fish_color_normal:white
 SETUVAR fish_color_operator:brcyan
 SETUVAR fish_color_option:\x1d
-SETUVAR fish_color_param:cyan
+SETUVAR fish_color_param:while
 SETUVAR fish_color_quote:yellow
-SETUVAR fish_color_redirection:cyan\x1e\x2d\x2dbold
-SETUVAR fish_color_search_match:\x2d\x2dbackground\x3d111
+SETUVAR fish_color_redirection:red
+SETUVAR fish_color_search_match:red\x1e\x2d\x2dbold
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
@@ -36,8 +42,8 @@ SETUVAR fish_greeting:\x1d
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_background:\x1d
 SETUVAR fish_pager_color_completion:normal
-SETUVAR fish_pager_color_description:B3A06D\x1e\x2d\x2ditalics
-SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_description:yellow\x1e\x2d\x2ditalics
+SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_secondary_background:\x1d
 SETUVAR fish_pager_color_secondary_completion:\x1d
@@ -47,5 +53,5 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dreverse
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/john/\x2erustup/toolchains/nightly\x2dx86_64\x2dunknown\x2dlinux\x2dgnu/bin\x1e/usr/lib/emscripten\x1e/opt/emscripten\x2dllvm/bin\x1e/home/john/scr/statusbar\x1e/home/john/scr\x1e/home/john/\x2enimble/bin\x1e/home/john/\x2elocal/slam/bin\x1e/home/john/\x2ecargo/bin\x1e/home/john/\x2elocal/bin
+SETUVAR fish_user_paths:/home/john/\x2elocal/share/gem/ruby/3\x2e3\x2e0/bin\x1e/home/john/\x2erustup/toolchains/nightly\x2dx86_64\x2dunknown\x2dlinux\x2dgnu/bin\x1e/usr/lib/emscripten\x1e/opt/emscripten\x2dllvm/bin\x1e/home/john/scr/statusbar\x1e/home/john/scr\x1e/home/john/\x2enimble/bin\x1e/home/john/\x2elocal/slam/bin\x1e/home/john/\x2ecargo/bin\x1e/home/john/\x2elocal/bin
 SETUVAR zoxide_cmd:cd

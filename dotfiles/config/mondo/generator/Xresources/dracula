@@ -1,0 +1,56 @@
+Xft.dpi: 144
+*.dpi: 144
+
+st.foreground:             #ffffff
+st.background:             #24283b
+st.cursorColor:            #ffffff
+st.cursorColor2:           #24283b
+st.borderColor:            #24283b
+
+st.color0:                 #24283b
+st.color8:                 #b57614
+st.color1:                 #db4b4b
+st.color9:                 #E0AF68
+st.color2:                 #10b981
+st.color10:                #ebdbb2
+st.color3:                 #E0AF68
+st.color11:                #f9f5d7
+st.color4:                 #4b80db
+st.color12:                #bd93f9
+st.color5:                 #ff79c6
+st.color13:                #313E7C
+st.color6:                 #4bafdb
+st.color14:                #8f3f71
+st.color7:                 #ffffff
+st.color15:                #32302F
+
+*.coloract1:              #313E7C
+*.coloract2:              #ffffff
+*.colorina1:              #44475a
+*.colorina2:              #ffffff
+
+
+budwm.normbordercolor:      #44475a
+budwm.normbgcolor:          #44475a
+budwm.normfgcolor:          #ffffff
+budwm.selbordercolor:       #313E7C
+budwm.selbgcolor:           #313E7C
+budwm.selfgcolor:           #ffffff
+
+st.borderpx:          20
+st.alpha: 1
+
+*.font:       CascadiaMonoPL Nerd Font Mono:size=14:antialias=true
+! #CascadiaMonoPL Nerd Font Mono:size=12:antialias=true
+st.font:       CascadiaMonoPL Nerd Font Mono:size=14:antialias=true
+*boldFont:       CascadiaMonoPL Nerd Font Mono:size=14:antialias=true, CascadiaMonoPL Nerd Font Mono:size=12:antialias=true
+*italicFont:     
+*boldItalicFont: 
+
+
+dmenu.background: #313E7C
+dmenu.foreground: #ffffff
+dmenu.selbackground: #44475a
+dmenu.selforeground: #ffffff
+
+! syntax:ssExcla

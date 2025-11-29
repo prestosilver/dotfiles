@@ -1,45 +1,48 @@
-theme               solarized-dark
-mag                 #f275be
-terminalfontsize1   12
-base0               #2d5b69
-terminalfontsize2   12
-base1               #72898f
-base2               #adbcbc
-base3               #102931
-black               #000000
-guifontface1        CaskaydiaCovePL Nerd Font
-red                 #fa5750
-fg1                 #adbcbc
-sel1                #ff665c
-sel2                #ff665c
-fg2                 #2d5b69
-vio                 #ff84cd
-icontheme           ePapirus
+terminalfontsize2   14
+act2                #f9f5d7
+fg2                 #ECEFF4
+vio                 #B48EAD
+blu                 #5E81AC
+ylw                 #EBCB8B
+sel1                #2E3440
+act3                #4C566A
+base0               #D8DEE9
+guifontface1        CascadiaMonoPL Nerd Font Mono
+sel2                #f9f5d7
+base1               #E5E9F0
+guifontface2        CascadiaMonoPL Nerd Font Mono
 cursortheme         Adwaita  
-bg1                 #103c48
-act1                #184956
-bg2                 #cad8d9
-act2                #cad8d9
-#define             fg #bdae93
-act3                #184956
-ora                 #ff665c
-wall                #103c48
-terminalfontface1   CaskaydiaCovePL Nerd Font
-terminalfontface2   Twitter Color Emoji
-base00              #184956
-base01              #72898f
-base02              #2d5b69
-base03              #cad8d9
-blu                 #4695f7
-bg                  #103c48
-cyn                 #41c7b9
-ylw                 #dbb32d
-fg                  #adbcbc
-ina1                #103c48
-ina2                #adbcbc
-ina3                #184956
-grn                 #75b938
-guifontsize1        12
-guifontsize2        10
+base2               #ECEFF4
+terminalfontface1   CascadiaMonoPL Nerd Font Mono
+icontheme           ePapirus
+mag                 #D08770
+red                 #BF616A
+base3               #f9f5d7
+terminalfontstyle   Regular
+terminalfontface2   CascadiaMonoPL Nerd Font Mono
 white               #ffffff
+bg1                 #2E3440
+dark1               #2E3440
+bg2                 #4C566A
+bg                  #2E3440
 gtktheme            buddybud 
+ina1                #434C5E
+base00              #2E3440
+ina2                #D8DEE9
+light1              #f9f5d7
+base01              #3B4252
+theme               nord
+wall                #434C5E
+ina3                #4C566A
+base02              #434C5E
+guifontsize1        14
+base03              #4C566A
+fg                  #D8DEE9
+guifontsize2        14
+black               #000000
+cyn                 #88C0D0
+grn                 #A3BE8C
+terminalfontsize1   14
+act1                #3B4252
+fg1                 #D8DEE9
+ora                 #81A1C1

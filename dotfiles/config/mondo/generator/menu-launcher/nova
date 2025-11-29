@@ -1,0 +1,14 @@
+#!/bin/bash
+exec bemenu-run --fn "FiraCode Nerd Font Mono 14" \
+    --tb '#556873' --tf '#D8DEE9' \
+    --fb '#556873' --ff '#D8DEE9' \
+    --cb '#E5E9F0' --cf '#899BA6' \
+    --nb '#6A7D89' --nf '#D8DEE9' \
+    --hb '#899BA6' --hf '#E5E9F0' \
+    --fbb '#899BA6' --fbf '#E5E9F0' \
+    --sb '#899BA6' --sf '#E5E9F0' \
+    --ab '#6A7D89' --af '#D8DEE9' \
+    --scb '#899BA6' --scf '#E5E9F0' \
+    --bdr '#6A7D89' \
+    --hp 10 --list 15 \
+    -B 2 --fixed-height --counter always

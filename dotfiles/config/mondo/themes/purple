@@ -36,11 +36,5 @@ ina1        bg
 ina2        base1
 ina3        base00
 
-terminalfontface1 CaskaydiaCovePL Nerd Font
-terminalfontsize1 12
-terminalfontface2 Twitter Color Emoji
-terminalfontsize2 12
-
-guifontface1      CaskaydiaCovePL Nerd Font
-guifontsize1      12
-guifontsize2      10
+sel1        act1
+sel2        act2

@@ -10,6 +10,4 @@
 # For instance one might want to reload certain processes
 # like windowmanagers and statusbars. 
 
-waylandpaper
-
-notify-send "Mondo" "Applied $(mondo -c theme)"
+notify-send "Mondo" "Applied $(mondo -c theme)" -u low

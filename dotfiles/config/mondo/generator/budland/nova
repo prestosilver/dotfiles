@@ -1,0 +1,13 @@
+-- color theme
+funcs = require("conpositor.funcs")
+
+-- generated with mondo
+session:set_color(true, "border", "#6A7D89FF")
+session:set_color(true, "background", "#899BA6FF")
+session:set_color(true, "foreground", "#E5E9F0FF")
+
+session:set_color(false, "border", "#6A7D89FF")
+session:set_color(false, "background", "#6A7D89FF")
+session:set_color(false, "foreground", "#D8DEE9FF")
+
+funcs.set_font_pt("FiraCode Nerd Font Mono", 14)

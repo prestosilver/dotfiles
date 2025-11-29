@@ -1,0 +1,32 @@
+font_family      CascadiaMonoPL Nerd Font Mono
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+background_opacity 1.0
+window_margin_width 0
+
+background #103c48
+foreground #adbcbc
+cursor #adbcbc
+selection_background #184956
+color0 #103c48
+color8 #2d5b69
+color1 #fa5750
+color9 #ff665c
+color2 #75b938
+color10 #adbcbc
+color3 #dbb32d
+color11 #102931
+color4 #4695f7
+color12 #ff84cd
+color5 #f275be
+color13 #72898f
+color6 #41c7b9
+color14 #2d5b69
+color7 #adbcbc
+color15 #cad8d9
+selection_foreground #cad8d9
+
+enable_audio_bell no
+confirm_os_window_close 0

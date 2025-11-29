@@ -1,15 +1,12 @@
-bg #103c48
-fg #adbcbc
+base03 #002b36
+base02 #073642
+base01 #586e75
+base00 #657b83
 
-base00 #184956
-base01 #72898f
-base02 #2d5b69
-base03 #cad8d9
-
-base0 #2d5b69
-base1 #72898f
-base2 #adbcbc
-base3 #102931
+base0 #839496
+base1 #93a1a1
+base2 #eee8d5
+base3 #fdf6e3
 
 red #fa5750
 ora #ff665c
@@ -20,31 +17,25 @@ mag #f275be
 vio #ff84cd
 cyn #41c7b9
 
+bg base03
+fg base0
+
 fg1         fg
 fg2         base02
 bg1         bg
 bg2         base03
 
-act1        base00
-act2        base03
-act3        base00
+act1        base03
+act2        base1
+act3        base03
 
-ina1        bg
-ina2        fg
-ina3        base00
+ina1        base02
+ina2        base01
+ina3        base02
 
-sel1        ora
-sel2        ora
+sel1        ylw
+sel2        bg
 
 cursortheme     Adwaita  
 icontheme       ePapirus
 gtktheme        buddybud 
-
-terminalfontface1 CaskaydiaCovePL Nerd Font
-terminalfontsize1 12
-terminalfontface2 Twitter Color Emoji
-terminalfontsize2 12
-
-guifontface1      CaskaydiaCovePL Nerd Font
-guifontsize1      12
-guifontsize2      10

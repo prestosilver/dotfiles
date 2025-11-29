@@ -1,0 +1,56 @@
+Xft.dpi: 144
+*.dpi: 144
+
+st.foreground:             #D8DEE9
+st.background:             #556873
+st.cursorColor:            #D8DEE9
+st.cursorColor2:           #556873
+st.borderColor:            #556873
+
+st.color0:                 #556873
+st.color8:                 #D8DEE9
+st.color1:                 #BF616A
+st.color9:                 #81A1C1
+st.color2:                 #A3BE8C
+st.color10:                #ECEFF4
+st.color3:                 #EBCB8B
+st.color11:                #f9f5d7
+st.color4:                 #9A93E1
+st.color12:                #B48EAD
+st.color5:                 #D08770
+st.color13:                #556873
+st.color6:                 #88C0D0
+st.color14:                #6A7D89
+st.color7:                 #D8DEE9
+st.color15:                #899BA6
+
+*.coloract1:              #899BA6
+*.coloract2:              #E5E9F0
+*.colorina1:              #6A7D89
+*.colorina2:              #D8DEE9
+
+
+budwm.normbordercolor:      #6A7D89
+budwm.normbgcolor:          #6A7D89
+budwm.normfgcolor:          #D8DEE9
+budwm.selbordercolor:       #6A7D89
+budwm.selbgcolor:           #899BA6
+budwm.selfgcolor:           #E5E9F0
+
+st.borderpx:          20
+st.alpha: 1
+
+*.font:       FiraCode Nerd Font Mono:size=14:antialias=true
+! #FiraCode Nerd Font Mono:size=12:antialias=true
+st.font:       FiraCode Nerd Font Mono:size=14:antialias=true
+*boldFont:       FiraCode Nerd Font Mono:size=14:antialias=true, Twitter Color Emoji:size=12:antialias=true
+*italicFont:     
+*boldItalicFont: 
+
+
+dmenu.background: #899BA6
+dmenu.foreground: #E5E9F0
+dmenu.selbackground: #6A7D89
+dmenu.selforeground: #D8DEE9
+
+! syntax:ssExcla

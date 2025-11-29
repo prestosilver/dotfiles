@@ -1,0 +1,14 @@
+#!/bin/bash
+exec bemenu-run --fn "CascadiaMonoPL Nerd Font Mono 14" \
+    --tb '#000000' --tf '#bdae93' \
+    --fb '#000000' --ff '#bdae93' \
+    --cb '#C0C0C0' --cf '#010081' \
+    --nb '#010081' --nf '#000000' \
+    --hb '#010081' --hf '#C0C0C0' \
+    --fbb '#010081' --fbf '#C0C0C0' \
+    --sb '#010081' --sf '#C0C0C0' \
+    --ab '#010081' --af '#000000' \
+    --scb '#010081' --scf '#C0C0C0' \
+    --bdr '#010081' \
+    --hp 10 --list 15 \
+    -B 2 --fixed-height --counter always

@@ -1,0 +1,49 @@
+/**
+ * @name Mondo 
+ * @version 1.0
+ * @description A revamped discord, inspired by the discord's current website.
+ * @source https://github.com/hellbound1337/discord-revamp
+ * @authorId 426147523305144322
+ * @author hellbound
+ * @donate https://paypal.me/zzzmario
+ * @invite pCc7q4Z
+**/
+
+@import url(https://raw.githack.com/hellbound1337/discord-revamp/master/src/source.css);
+
+.theme-dark,
+.theme-light,
+:root {
+    --background-primary: #dad4bd !important;
+    --background-secondary: #dad4bd !important;
+    --background-secondary-alt: #dad4bd !important;
+    --background-tertiary: #dad4bd !important;
+    --background-accent: #dad4bd !important;
+    --background-floating: #dad4bd !important;
+    --background-modifier-hover: rgba(255,255,255,0.01) !important;
+    --background-modifier-active: rgba(255,255,255,0.03) !important;
+    --background-modifier-selected: rgba(255,255,255,0.04) !important;
+    --background-modifier-accent: hsla(0,0%,100%,0.06) !important;
+    --channeltextarea-background: var(--background-accent) !important;
+    --deprecated-card-bg: rgba(0, 0, 0, 0.2) !important;
+    --deprecated-card-editable-bg: rgba(0,0,0,0.1) !important;
+    --deprecated-text-input-bg: var(--background-tertiary) !important;
+    --deprecated-text-input-border: var(--background-floating) !important;
+    --deprecated-text-input-border-disabled: var(--background-tertiary) !important;
+    --activity-card-background: var(--background-primary) !important;
+    --channels-default: #234f5c !important;
+    --text-muted: #234f5c !important;
+    --text-normal: #234f5c !important; 
+    --interactive-normal: #234f5c !important;
+    --interactive-hover: #234f5c !important;
+    --interactive-active: #234f5c !important;
+    --interactive-muted: #234f5c !important;
+    --header-primary: white !important;
+    --header-secondary: #234f5c !important;
+    --toast-background: var(--background-primary) !important;
+    --toast-header: var(--background-tertiary) !important;
+    --toast-contents: var(--background-secondary) !important;
+    --toast-box-shadow: rgba(0, 0, 0, .2) !important;
+    --toast-border: var(--background-tertiary) !important;
+    --text-link: #428182 !important;
+}

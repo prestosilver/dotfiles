@@ -19,4 +19,6 @@
 # To source the settings file one could use this:
 # source "${THIS_DIR}/_mondo-settings"
 
+xrdb ~/.Xresources
+fakesig 1
 killall -USR1 st

@@ -1,0 +1,56 @@
+Xft.dpi: 144
+*.dpi: 144
+
+st.foreground:             #bdae93
+st.background:             #252323
+st.cursorColor:            #bdae93
+st.cursorColor2:           #252323
+st.borderColor:            #252323
+
+st.color0:                 #252323
+st.color8:                 #b57614
+st.color1:                 #cc241d
+st.color9:                 #9d0006
+st.color2:                 #98971a
+st.color10:                #ebdbb2
+st.color3:                 #d79921
+st.color11:                #f9f5d7
+st.color4:                 #458588
+st.color12:                #076678
+st.color5:                 #b16286
+st.color13:                #8f3f71
+st.color6:                 #689d6a
+st.color14:                #427b58
+st.color7:                 #bdae93
+st.color15:                #32302F
+
+*.coloract1:              #458588
+*.coloract2:              #f9f5d7
+*.colorina1:              #32302F
+*.colorina2:              #bdae93
+
+
+budwm.normbordercolor:      #32302F
+budwm.normbgcolor:          #32302F
+budwm.normfgcolor:          #bdae93
+budwm.selbordercolor:       #32302F
+budwm.selbgcolor:           #458588
+budwm.selfgcolor:           #f9f5d7
+
+st.borderpx:          20
+st.alpha: 1
+
+*.font:       Wingdings:size=14:antialias=true
+! #Wingdings:size=12:antialias=true
+st.font:       Wingdings:size=14:antialias=true
+*boldFont:       Wingdings:size=14:antialias=true, Wingdings :size=12:antialias=true
+*italicFont:     
+*boldItalicFont: 
+
+
+dmenu.background: #458588
+dmenu.foreground: #f9f5d7
+dmenu.selbackground: #32302F
+dmenu.selforeground: #bdae93
+
+! syntax:ssExcla

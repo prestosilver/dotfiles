@@ -47,3 +47,8 @@ end
 function fish_command_not_found
     cd $argv[1]
 end
+
+function fish_title
+    set -q argv[1]; or set argv (prompt_pwd)
+    echo $argv
+end

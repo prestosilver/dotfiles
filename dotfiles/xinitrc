@@ -2,13 +2,19 @@
 
 [ -f ~/.xprofile ] && . ~/.xprofile
 
-xrdb ~/.Xresources
-
-xrandr --dpi 144
-
 gnome-keyring-daemon
 
-sleep 1
 $HOME/scr/screen2.sh
 
+{
+    while $(pidof budwm); do
+        sleep 0.1
+    done
+
+    sleep 0.1
+    xrdb ~/.Xresources
+    xrandr --dpi 144
+} &
+
+# exec surf -f -k google.com
 exec budwm
