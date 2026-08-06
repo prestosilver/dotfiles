@@ -1,0 +1,8 @@
+#!/bin/bash
+iFile=$(<"$2")
+iChopped="${iFile:0:1600}"
+unset iFile
+echo "${iChopped}" > tmp.txt
+unset iChopped
+convert -size 210x290 -background white -pointsize 5 -border 10x10 -bordercolor "#CCC" caption:@"tmp.txt" "$3"
+rm tmp.txt

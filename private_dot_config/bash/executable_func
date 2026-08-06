@@ -1,0 +1,75 @@
+# add last command to logbook . find link linux bbq
+function lb() { fc -lnr -1 >> $HOME/.bash/logbook ;}
+
+# prints newest file in dir
+function lat() { ls -t | head -1 ;}
+
+adda(){
+  al=$1
+  shift 1
+  echo "alias $al='${@}'" >> $HOME/.bash/alias
+  . $HOME/.bashrc
+}
+
+# install apt package and add entry to packagelist
+# find link reddit, unixporn
+apti(){
+  local file
+  for file in "$@" ;do
+    if sudo apt install "$file" -y ;then
+      echo "$file $(date +%F)" >> $HOME/.packages/apt
+    fi
+  done
+}
+
+gemi(){
+  local file
+  for file in "$@" ;do
+    if sudo gem install "$file" -y ;then
+      echo "$file $(date +%F)" >> $HOME/.packages/gem
+    fi
+  done
+}
+
+pipi(){
+  local file
+  for file in "$@" ;do
+    if sudo pip install "$file" -y ;then
+      echo "$file $(date +%F)" >> $HOME/.packages/pip
+    fi
+  done
+}
+
+cd() {
+  z "$@" && ls && za
+}
+
+ccd(){
+  place=$(sublget)
+  cd $place
+}
+
+mcd(){
+  mkdir -p ${@}
+  cd ${@}
+  za
+}
+
+# colorize less.. find link, random dotfile...
+# fix cyan bottom bar and colors in general.
+man(){
+    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_me=$'\e[0m' \
+    LESS_TERMCAP_se=$'\e[0m' \
+    LESS_TERMCAP_so=$'\e[01;44;33m' \
+    LESS_TERMCAP_ue=$'\e[0m' \
+    LESS_TERMCAP_us=$'\e[01;32m' \
+    command man "$@"
+}
+
+lla() {
+  [[ "$1" == "" ]] && echo "adding $PWD" && { linklord -a $PWD; return; }
+  link=$(readlink -f $1)
+  echo "adding $link"
+  linklord -a $link
+}

@@ -1,0 +1,47 @@
+!! Theme:    nature-suede
+!! Author:   john
+!! Created:  2023-08-24
+fg #c8c2a7
+bg #170f0D
+
+base00 #120d0c
+base01 #392925
+base02 #98724c
+base03 #af652f
+
+base0 #120d0c
+base1 #af652f
+base2 #120d0c
+base3 #170f0D
+
+red #98724c
+ora #af652f
+grn #908f32
+ylw #c3c13d
+blu #7b854e
+mag #6b5644
+vio #5c5142
+cyn #70a16c
+
+fg1         fg
+fg2         base2
+bg1         bg
+bg2         base03
+
+dark1       base00
+light1      base3
+
+act1        base01
+act2        fg
+act3        base2
+
+ina1        #4a4342
+ina2        #0b0908
+ina3        base2
+
+sel1     base00
+sel2     base3
+
+cursortheme     Adwaita  
+icontheme       ePapirus
+gtktheme        buddybud 

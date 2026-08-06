@@ -1,0 +1,43 @@
+2023-08-24 16:20:43 - Neovide panicked with the message 'Could not setup setting notifier for floating_blur_amount_x: Error sending request 'nvim_command''. (File: src/error_handling.rs; Line: 5, Column: 5)
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+
+nown>
+
+2023-08-24 16:20:44 - Neovide panicked with the message 'called `Result::unwrap()` on an `Err` value: SendError(Serial(MouseButton { button: "move", action: "", grid_id: 2, position: (144, 26), modifier_string: "" }))'. (File: src/event_aggregator.rs; Line: 51, Column: 28)
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+

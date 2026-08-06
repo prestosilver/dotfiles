@@ -1,0 +1,131 @@
+#!/usr/bin/env python3
+
+import inotify.adapters
+import threading
+import os
+import sys
+import glob
+import subprocess
+from pathlib import PurePath
+
+HOME = PurePath(os.getenv("HOME"))
+#        path                  tree   startup
+dirs = [[HOME / "dwn",         False, True],
+        [HOME / "doc/src",     True,  False],
+        [HOME / "doc/srt",     True,  True],
+        [HOME,                 False,  True],
+        [HOME / "pix",         False,  True]]
+SORT = {
+        "*.pdf": "mv %%file%% " + str(HOME / "doc/pdf/msc"),
+        "*.java": "mv %%file%% " + str(HOME / "doc/java/misc/ref"),
+        "*.jpg": "mv %%file%% " + str(HOME / "pix/msc"),
+        "*.png": "mv %%file%% " + str(HOME / "pix/msc"),
+        "*.gif": "mv %%file%% " + str(HOME / "pix/msc"),
+        "*.mp4": "mv %%file%% " + str(HOME / "vid/msc"),
+        "*.mkv": "mv %%file%% " + str(HOME / "vid/msc"),
+        "*.download": "ls",
+        "*": ["mkdir -p " + str("%%path%%/%%ext%%"),
+              "mv %%file%% " + str("%%path%%/%%ext%%")],
+       }
+dir_actions = [
+    SORT,
+    {
+      "*.mu": "markup_comp %%filename%% %%path%%"
+    },
+    SORT,
+    {
+      "*.png": "mv %%file%% " + str(HOME / "pix/ss"),
+      "*.mkv": "mv %%file%% " + str(HOME / "vid/msc"),
+    },
+    {
+      "*.png": "mv %%file%% " + str(HOME / "pix/ss")
+    }]
+
+
+def repshort(string, path, filename):
+    string = string.replace("%%file%%", path + "/" + filename)
+    string = string.replace("%%filename%%", filename)
+    string = string.replace("%%ext%%", filename.split(".")[-1])
+    string = string.replace("%%path%%", path)
+    return string
+
+
+def watch(i, id):
+    for event in i.event_gen(yield_nones=False):
+        (_, type_names, path, filename) = event
+
+        if "IN_CLOSE_WRITE" in type_names:
+            print(path + "/" + filename + ": " + str(type_names))
+            for g in dir_actions[id]:
+                if type(dir_actions[id][g]) == str:
+                    print(path + "/" + g)
+                    print(str(glob.glob(path + "/" + g)))
+                    if path + "/" + filename in glob.glob(path + "/" + g):
+                        print("RUNNING: " + dir_actions[id][g])
+                        action = [repshort(j, path, filename) for j
+                                  in dir_actions[id][g].split(" ")]
+                        subprocess.run(["dunstify", "-a", "filesort", "RUNNING: " + " ".join(action)])
+                        subprocess.run(action)
+                        break
+                else:
+                    print(path + "/" + g)
+                    print(str(glob.glob(path + "/" + g)))
+                    if path + "/" + filename in glob.glob(path + "/" + g):
+                        for h in dir_actions[id][g]:
+                            print("RUNNING: " + h)
+                            action = [repshort(j, path, filename) for j
+                                      in h.split(" ")]
+                            subprocess.run(["dunstify","-f","filesort", "RUNNING: " +
+                                                        " ".join(action)])
+                            subprocess.run(action)
+                    break
+
+
+def presort():
+    for id in range(len(dirs)):
+        if dirs[id][2]:
+            path = str(dirs[id][0])
+        for g in dir_actions[id]:
+            if type(dir_actions[id][g]) == str:
+                for filename in glob.glob(path + "/" + g):
+                    if os.path.isfile(filename):
+                        action = [repshort(j, path, filename.split("/")[-1])
+                                  for j in dir_actions[id][g].split(" ")]
+                        print("RUNNING: " + " ".join(action))
+                        subprocess.run(action)
+            else:
+                for filename in glob.glob(path + "/" + g):
+                    if os.path.isfile(filename):
+                        for h in dir_actions[id][g]:
+                            action = [repshort(j, path,
+                                      filename.split("/")[-1])
+                                      for j in h.split(" ")]
+                            print("RUNNING: " + " ".join(action))
+                            subprocess.run(action)
+
+
+def _main():
+    try:
+        if (sys.argv[1] == "create"):
+            for path in ["doc", "doc/srt", "doc/src", "doc/pdf", "doc/rep", "doc/rep/github.com","dwn", "dwn/web", "mnt", "pix", "pix/memes", "pix/msc", "pix/ss", "pix/wallpapers", "snd", "vid"]:
+                if not os.path.isdir(HOME / path):
+                    os.mkdir(HOME / path)
+                    print(f"made dir '{path}'")
+                else:
+                    print(f"dir '{path}' exists")
+            return
+    except Exception: pass
+    presort()
+    for i, dir in enumerate(dirs):
+        print("starting thread: " + str(dir[0]))
+        if not(dir[1]):
+            watcher = inotify.adapters.Inotify()
+            watcher.add_watch(str(dir[0]))
+        else:
+            watcher = inotify.adapters.InotifyTree(str(dir[0]))
+        x = threading.Thread(target=watch, args=(watcher, i))
+        x.start()
+
+
+if __name__ == '__main__':
+    _main()

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# i3blocks mail module.
+# Displays number of unread mail and an loading icon if updating.
+# When clicked, brings up `neomutt`.
+
+unread=" $(find ~/.local/share/mail/*/INBOX/new/* -type f | wc -l 2>/dev/null)"
+if [[ $1 == "icon" ]]; then
+  unread=""
+fi
+
+echo "$unread"

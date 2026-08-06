@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Status bar module for disk space
+# $1 should be drive mountpoint
+# $2 is optional icon, otherwise mountpoint will displayed
+if [[ $3 == "icon" ]]; then
+  echo "$2"
+else
+  printf "%s %s\n" "$2" "$(df -h "$1" | awk ' /[0-9]/ {print $5}' | sed "s/%//")"
+fi

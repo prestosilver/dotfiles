@@ -1,0 +1,54 @@
+#!/bin/bash
+
+badproject=not
+
+# this script will remove windows from the session
+# file where the active project matches the variable
+# $badproject . If this script is in $PATH, it will
+# get executed from "sublaunch" whenever a new sublime
+# window is created.
+
+# this script is only useful if one uses a multiwindow
+# sublime setup. 
+
+f=~/.config/sublime-text-3/Local/Session.sublime_session
+
+awk -v badp=$badproject '
+  BEGIN {re="^\\s*\"project\": \"" badp ".sublime-project\".*"}
+
+  /^\s*"workspaces":/ {
+    print "["
+    for (k in saved) {
+      if (k != bad)
+        print "{" saved[k] "\n},"
+    }
+    print "],"
+    dontprint=0
+  }
+
+  !dontprint {print}
+
+
+  /^\s*"windows":/ {dontprint=1}
+
+  dontprint {
+
+    if (/^\s*"auto_complete":/) 
+      save=1
+
+    if ($0 ~ re) {
+      bad=dontprint
+    }
+
+    
+    if (save==1)
+      saved[dontprint] = saved[dontprint] "\n" $0
+
+    if (/^\s*"workspace_name":/) {
+      dontprint++
+      save=0
+    }
+    
+  }
+  
+' "$f" > "${f}2" && mv -f "${f}2" "$f"

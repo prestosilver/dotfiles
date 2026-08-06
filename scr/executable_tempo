@@ -1,0 +1,7 @@
+#!/bin/bash
+
+TDIR="$(xdg-user-dir TEMPLATES)"
+TEMPLATE=$TDIR/$(ls $TDIR | dmenu -n -p "Create: ")
+OUTPUT=$(echo -n "" | dmenu -n -p "Output: ")
+
+cp $TEMPLATE $OUTPUT

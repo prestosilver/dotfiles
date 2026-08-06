@@ -1,0 +1,49 @@
+!! Theme:    monokai
+!! Author:   john
+!! Created:  2023-06-25
+fg #F1EBEB
+bg #272822
+
+base00 #252323
+base01 #427b58
+base02 #8f3f71
+base03 #76715E
+
+base0 #48483E
+base1 #bdae93
+base2 #ebdbb2
+base3 #f9f5d7
+
+red #DC2566
+ora #FA2772
+grn #8FC029
+ylw #D4C96E
+blu #55BCCE
+mag #AE82FF
+vio #9358FE
+cyn #56B7A5
+
+fg1         fg
+fg2         base2
+bg1         bg
+bg2         base03
+
+dark1       base00
+light1      base3
+
+act1        bg
+act2        fg
+act3        grn
+
+ina1        bg
+ina2        fg
+ina3        fg
+
+sel1     base00
+sel2     base3
+
+wall bg
+
+cursortheme     Adwaita  
+icontheme       ePapirus
+gtktheme        buddybud 

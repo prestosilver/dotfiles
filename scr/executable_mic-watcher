@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+from pulsectl import Pulse, PulseLoopStop
+import sys
+import subprocess
+
+# Adapt to your use-case
+source_id = 0
+
+with Pulse() as pulse:
+  def callback(ev):
+    raise PulseLoopStop
+  try:
+    pulse.event_mask_set('source')
+    pulse.event_callback_set(callback)
+    last_value = round(pulse.source_list()[source_id].volume.value_flat * 100)
+    last_mute = pulse.source_list()[source_id].mute == 1
+    while True:
+      pulse.event_listen()
+      value = round(pulse.source_list()[source_id].volume.value_flat * 100)
+      mute = pulse.source_list()[source_id].mute == 1
+      if value != last_value or mute != last_mute:
+        print(value, end='')
+        if mute:
+            print('!')
+        else:
+            print('')
+        last_value = value
+        last_mute = mute
+      sys.stdout.flush()
+  except:
+    pass

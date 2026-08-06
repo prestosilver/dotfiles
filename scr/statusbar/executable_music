@@ -1,0 +1,37 @@
+case $1 in
+  1) playerctl play-pause; exit;;
+  2) playerctl previous; exit;;
+  3) playerctl next; exit;;
+esac
+
+mpc status | sed -n -e '1{p;q}'
+
+#st=$(playerctl metadata --format '{{artist}}: {{lc(title)}}' 2>&1)
+#if [ "$st" != "No players found" ]; then
+#    echo $st
+#
+#    exit
+#fi
+
+#spt pb -f "%s %t" ||
+#[[ "$(pgrep spotify)" == "" ]] || { eval "$(spotify-cli now-playing)" \
+#  && printf "  $spotify_artist_name - $spotify_track_name" \
+#  | tr -d '\n' \
+#  | awk -v len=40 '{ if (length($0) > len) print substr($0, 1, len-3) "..."; else print; }'; exit; }
+#
+# { printf "\xf1 no music "; exit;}
+#
+##[[ $(mpc status) == *'[playing]'* ]] || printf "\xf2"
+##[[ $(mpc status) == *'[playing]'* ]] && printf "\xf1"
+#if [[ $1 == icon ]]; then
+#  [[ $(mpc status) == *'[playing]'* ]] || printf "  \n"
+#  [[ $(mpc status) == *'[playing]'* ]] && printf "  \n"
+#  exit
+#fi
+#
+#mpc status \
+#  |sed "/^volume:/d" \
+#  | tac \
+#  | sed -e "s/\\[paused\\].*/  /g;s/\\[playing\\].*/  /g" \
+#  | tr -d '\n' | sed "s/\;//g" \
+#  | awk -v len=40 '{ if (length($0) > len) print substr($0, 1, len-3) "..."; else print; }'

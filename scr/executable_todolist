@@ -1,0 +1,64 @@
+#! /bin/bash
+# Given the current working directory, find all of the files of the  
+# type given and search for TODO comments in them and return a list
+# of these items.
+#
+# Usage: todolist <dir> '*.py' 
+
+DIR=$1
+if [ -z "$DIR" ]; then
+    DIR="."
+fi
+
+TYPES=$2
+if [ -z "$TYPES" ]; then
+    TYPES='*.py'
+fi
+
+INDENT="    "
+
+get_results() {
+    file=$1
+    todos=$(cat "$file" | nl | grep -i -e '\bTODO\b:' "$file");
+    echo "$todos" | while read todo; do
+        if [ -n "$todo" ]; then
+            text=$(echo "$todo" | sed 's/.*TODO[: ]*\(.*\)\(-->\)\{0,1\}/\1/');
+            if [ -z "$text" ]; then
+                printf "$INDENT- [Blank]\n"  
+            else
+                printf "$INDENT- $text\n"
+            fi
+        fi
+    done
+}
+
+# Set the window title
+# http://bit.ly/2k3BtgN
+echo -n -e "\033]0;todolist\007"
+
+sep=$(printf %"$(tput cols)"s |tr " " "-")
+
+# Process Files
+while true; do
+    lines=$(find "$DIR" -name "$TYPES" -type f | while read file; do
+    results=$(get_results "$file");  
+        if [ -n "$results" ]; then
+            printf "$file\n$results\n\n"
+        fi
+    done);
+
+    # Clear scrollback and render
+    printf "\033c";
+    cat << EOF
+$sep
+ todolist
+
+ cwd: $(basename $DIR)
+ types: $TYPES
+$sep
+
+$lines
+EOF
+
+    sleep 10;
+done;

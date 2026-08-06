@@ -1,0 +1,17 @@
+#!/bin/bash
+# case $1 in
+#   "0") xsetroot -name "fsignal:10"; exit ;;
+#   "1") xsetroot -name "fsignal:11"; exit ;;
+# esac
+
+names[0]=""
+names[1]=""
+names[2]=""
+
+#cwp=$(wmctrl -d | awk '{printf $2}' | cut -d\* -f1)
+#cwp="$((${#cwp} + 1))"
+cwp=$(cat /tmp/budwm.ipc | grep ActiveTag | head -1 | tail -c 2)
+num=" F$cwp"
+
+[[ $1 == "icon" ]] && num=""
+printf "${names[cwp]:-${names[0]}}$num\n"

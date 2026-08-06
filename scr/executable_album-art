@@ -1,0 +1,18 @@
+#!/bin/bash
+tmp="$(playerctl metadata)"
+
+[ -x "$tmp" ] && exit
+
+artist=$(echo "$tmp" | grep "artist " | sed "s/.*:artist //" | sed "s/^ *//")
+album=$(echo "$tmp" | grep "album " | sed "s/.*:album //" | sed "s/^ *//")
+track=$(echo "$tmp" | grep "title " | sed "s/.*:title //" | sed "s/^ *//")
+url=$(echo "$tmp" | grep "artUrl " | sed "s/.*:artUrl //" | sed "s/^ *//")
+
+cache="$artist - $album"
+
+[ "$cache" == "$(cat /tmp/cover.txt)" ] && exit
+
+wget "$url" -O /tmp/cover.jpeg
+printf "%s" "$cache" > /tmp/cover.txt
+kill -RTMIN+15 $(pidof waybar)
+notify-send -u low -i "/tmp/cover.jpeg" "$track" "$artist" 

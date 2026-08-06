@@ -1,0 +1,24 @@
+case $1 in
+  "m")
+    youtube-dl -x --add-metadata --audio-format mp3 --download-archive ~/snd/archive --playlist-items 1000 --yes-playlist -o "~/snd/%(uploader)s/%(album)s/%(title)s.%(ext)s" $2;;
+  "v")    
+    youtube-dl --add-metadata --download-archive ~/vid/archive -o "~/vid/%(uploader)s/%(title)s.%(ext)s" $2;;
+  "dm")    
+    for i in $(< ~/snd/youdown_list) ;do
+      youtube-dl -x --add-metadata --audio-format mp3 --download-archive ~/snd/archive -o "~/snd/%(uploader)s/%(album)s/%(title)s.%(ext)s" $i 
+    done
+    wait;;
+  "dv")    
+    for i in $(< ~/vid/youdown_list) ;do
+      youtube-dl --add-metadata --audio-format mp3 --download-archive ~/vid/archive -o "~/vid/%(uploader)s/%(title)s.%(ext)s" $i 
+    done
+    wait;;
+  *)
+    for i in $(< ~/snd/youdown_list) ;do
+      youtube-dl -x --add-metadata --yes-playlist --playlist-items 1000 --audio-format mp3 --download-archive ~/snd/archive -o "~/snd/%(uploader)s/%(album)s/%(title)s.%(ext)s" $i
+    done
+    for i in $(< ~/vid/youdown_list) ;do
+      youtube-dl --add-metadata --audio-format mp3 --download-archive ~/vid/archive -o "~/vid/%(uploader)s/%(title)s.%(ext)s" $i
+    done
+    wait;;
+esac

@@ -1,0 +1,56 @@
+Xft.dpi: 256
+*.dpi: 256
+
+st.foreground:             %%fg%%
+st.background:             %%bg%%
+st.cursorColor:            %%fg%%
+st.cursorColor2:           %%bg%%
+st.borderColor:            %%bg%%
+
+st.color0:                 %%bg%%
+st.color8:                 %%base0%%
+st.color1:                 %%red%%
+st.color9:                 %%ora%%
+st.color2:                 %%grn%%
+st.color10:                %%base2%%
+st.color3:                 %%ylw%%
+st.color11:                %%base3%%
+st.color4:                 %%blu%%
+st.color12:                %%vio%%
+st.color5:                 %%mag%%
+st.color13:                %%base01%%
+st.color6:                 %%cyn%%
+st.color14:                %%base02%%
+st.color7:                 %%fg%%
+st.color15:                %%base03%%
+
+*.coloract1:              %%act1%%
+*.coloract2:              %%act2%%
+*.colorina1:              %%ina1%%
+*.colorina2:              %%ina2%%
+
+
+budwm.normbordercolor:      %%ina3%%
+budwm.normbgcolor:          %%ina1%%
+budwm.normfgcolor:          %%ina2%%
+budwm.selbordercolor:       %%act3%%
+budwm.selbgcolor:           %%act1%%
+budwm.selfgcolor:           %%act2%%
+
+st.borderpx:          20
+st.alpha: 1
+
+*.font:       %%guifontface1%%:size=14:antialias=true
+! #%%guifontface2%%:size=12:antialias=true
+st.font:       %%terminalfontface1%%:size=14:antialias=true
+*boldFont:       %%terminalfontface1%%:size=14:antialias=true, %%terminalfontface2%%:size=12:antialias=true
+*italicFont:     
+*boldItalicFont: 
+
+
+dmenu.background: %%act1%%
+dmenu.foreground: %%act2%%
+dmenu.selbackground: %%ina1%%
+dmenu.selforeground: %%ina2%%
+
+! syntax:ssExcla

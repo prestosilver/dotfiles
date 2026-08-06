@@ -1,0 +1,77 @@
+alias dlw='cd ~/Downloads/w'
+alias dls='cd ~/Downloads/s'
+alias dlp='cd ~/Downloads/p'
+
+alias spotifyd='spotifyd -u 21ndnpvlkdukezg7ht2mkcyay -P "pass spotify" -d "johnpc lmao" --on-song-change-hook "mediacontrol update"'
+
+alias cnf='cd ~/.config'
+alias tmp='cd /tmp'
+
+alias cdd='cd -'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias gc='git clone'
+alias tgz='tar xzf'
+
+alias upp='sudo apt update && sudo apt upgrade'
+alias rbo='sudo reboot now'
+alias down='sudo shutdown now'
+
+alias lolban="postbanner -t '-f 3d.flf' -l '-p 10'"
+
+alias shr='. $HOME/.bashrc'
+alias q='exit'
+alias chx='chmod +x'
+
+alias ll='limplink'
+alias la='ls -alh'
+alias ls='ls --color=auto'
+alias lb='ls --color=none'
+
+alias pg='ps aux | head -n1; ps aux | grep -i'
+alias tf='tail -F -n200'
+alias top='top -ocpu'
+
+alias vi='vim'
+alias vim='vim -p'
+alias feh='feh --scale-down --no-screen-clip'
+
+
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias hideme='history -d $((HISTCMD-1))'
+alias hideprev='history -d $((HISTCMD-2)) && history -d $((HISTCMD-1))'
+
+alias i3gm='i3-msg -t get_marks'
+alias src='cd src && ls'
+alias comps='cd $HOME/www/static && compass watch'
+alias hugs='cd $HOME/www && hugo server -D'
+alias apts='apt search'
+alias smi='sudo checkinstall'
+alias aptr='sudo apt remove'
+alias cls='clear'
+alias mu='markup -c 4'
+alias pdflord='linklord -d ~/.config/pdflord/pdfs -s ~/.config/pdflord'
+alias i3-msg='swaymsg'
+alias ls='exa --icons --group-directories-first -I "GPUCache"'
+
+eval "$(zoxide init --cmd z --hook prompt bash)"
+alias cdi='zi'
+alias za='zoxide add "$(pwd)"'
+
+eval "$(thefuck -a rip)"
+
+alias todo='trello show-cards -l todo -i 2>/dev/null -b'
+alias doing='trello assigned-to-me 2>/dev/null -b'
+alias url='git remote get-url origin'
+alias dotdrop='dotdrop --cfg=$HOME/doc/rep/github.com/dotfiles/config.yaml -p default'
+diff() {
+    git diff --name-only --diff-filter=d | xargs bat --diff
+}
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"

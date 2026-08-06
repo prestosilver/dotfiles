@@ -1,0 +1,64 @@
+sudo chown -R john $HOME
+source $HOME/.bashrc
+
+mkdir -p $HOME/.config/ranger/plugins/
+git clone https://github.com/cdump/ranger-devicons2 $HOME/.config/ranger/plugins/ranger-devicons2
+
+sudo pacman -S --needed base-devel
+
+mkdir -p $HOME/doc/rep/aur.archlinux.org/
+git clone https://aur.archlinux.org/yay.git $HOME/doc/rep/aur.archlinux.org/yay
+pushd $HOME/doc/rep/aur.archlinux.org/yay
+
+pacman -Qe | grep -q yay || makepkg -si
+
+popd
+
+yay -S --noconfirm --needed python3 python-pip
+
+IFS=$'\n'
+
+for line in $(cat /home/john/.dotfiles/dotfiles/packages.txt); do
+  type=$(echo $line | cut -d " " -f1)
+  toinstall=$(echo $line | cut -d " " -f2)
+
+  case $type in
+    "Y")
+      echo $toinstall
+      sudo pip3 install $toinstall --break-system-packages ;;
+    "P")
+      echo $toinstall
+      pacman -Qe | grep -q $toinstall || yay -S --noconfirm --needed $toinstall ;;
+    "G")
+      clonedir=$HOME/doc/rep/github.com/${toinstall##*/}
+      git clone http://github.com/$toinstall $clonedir
+      pushd $clonedir
+      make
+      sudo make install
+      popd
+      ;;
+    esac
+done
+
+unset IFS
+
+$HOME/scr/filesort create
+git clone http://github.com/bob16795/colored-mist $HOME/doc/rep/github.com/colored-mist
+
+# mondo -fg all
+# mondo -a notepad
+
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+bwp -w /home/john/.dotfiles/dotfiles/wallpaper.jpg
+
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+
+nvim --headless -c 'autocmd User PackerInstall quitall' -c 'PackerInstall'
+
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+
+chsh /usr/bin/fish

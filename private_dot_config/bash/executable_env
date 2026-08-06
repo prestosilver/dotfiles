@@ -1,0 +1,24 @@
+PATH="$HME/.rbenv/bin:$PATH"
+PATH="$HOME/.local/go/bin/:$PATH"
+PATH="$HOME/.nimble/bin:$HOME/.gem/ruby/2.6.0/bin:$HOME/bin:$HOME/scr:$HOME/scr/ll:$HOME/scr/statusbar:$HOME/.local/bin:$PATH"
+PATH="$NDLESS/ndless-sdk/toolchain/install/bin:$NDLESS/ndless-sdk/bin:${PATH}"
+PATH="$HOME/scr/tools/arm-bcm2708/arm-linux-gnueabihf/bin:${PATH}"
+PATH="$HOME/.gem/ruby/2.7.0/bin:${PATH}"
+PATH="$PATH:/home/john/doc/rep/Ndless/ndless-sdk/toolchain/install/bin:/home/john/doc/rep/Ndless/ndless-sdk/toolchain/../bin"
+PATH="$HOME/.rbenv/bin:$PATH"
+PATH="/usr/local/bin:$PATH"
+PATH="/opt/android-sdk/tools/bin:$PATH"
+export PATH
+export BROWSER=qutebrowser
+export XDG_DATA_HOME="$HOME/.local/share"
+export BWP_COMMAND="feh --no-fehbg --bg-fill"
+export BWP_DIR="$HOME/pix/wallpapers"
+export GEM_HOME="$XDG_DATA_HOME"/gem
+export GEM_SPEC_CACHE="$XDG_CACHE_HOME"/gem
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export GOPATH="$HOME/.local/go"
+export SDL_HOME="$HOME/.sdl/SDL2-2.0.12"
+export BWP_LOCK_IMAGE_OPTIONS="-resize 1366x768!"
+export CM_HISTLENGTH=20
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/jre/
+

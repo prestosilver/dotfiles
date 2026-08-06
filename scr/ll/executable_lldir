@@ -1,0 +1,10 @@
+dir="$(echo $1 | sed "s/file:\///;s/\/$//")"
+choice="$(echo -e "term\nfiles\nedit" | dmenu)"
+case $choice in
+  "term")
+    cd $dir && st -c stA;;
+  "files")
+    cd $dir && st -c FilesD -e ranger;;
+  "edit")
+    code $dir;;
+esac

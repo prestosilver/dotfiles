@@ -1,0 +1,49 @@
+!! Theme:    yousai
+!! Author:   john
+!! Created:  2023-08-01
+fg #F5E7DE
+bg #4C3226
+
+base00 #664233
+base01 #A67C53
+base02 #7F7F7A
+base03 #666661
+
+base0 #2E2420
+base1 #A67C53
+base2 #7F7F7A
+base3 #666661
+
+red #992E2E
+ora #D97742
+grn #A67C53
+ylw #F2854A
+blu #5986B2
+mag #664233
+vio #A67C53
+cyn #BF9986
+
+fg1         fg
+fg2         base2
+bg1         bg
+bg2         base03
+
+dark1       base00
+light1      base3
+
+act1        base00
+act2        fg
+act3        base00
+
+ina1        base0
+ina2        base1
+ina3        base0
+
+sel1     base00
+sel2     base3
+
+wall     base01
+
+cursortheme     Adwaita  
+icontheme       ePapirus
+gtktheme        buddybud 

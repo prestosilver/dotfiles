@@ -1,0 +1,6 @@
+for FILE in $(ls ~/pix/raw)
+do
+  bwp -w ~/pix/raw/$FILE
+  bwp -x $("" | dmenu)
+  rm ~/pix/raw/$FILE
+done

@@ -1,0 +1,44 @@
+fg #ffffff
+bg #24283b
+
+base00 #44475a
+base01 #313E7C
+base02 #8f3f71
+base03 #32302F
+
+base0 #b57614
+base1 #bdae93
+base2 #ebdbb2
+base3 #f9f5d7
+
+red #db4b4b
+ora #E0AF68
+grn #10b981
+ylw #E0AF68
+blu #4b80db
+mag #ff79c6
+vio #bd93f9
+cyn #4bafdb
+
+fg1         fg
+fg2         base2
+bg1         bg
+bg2         base03
+
+dark1       base00
+light1      base3
+
+act1        base01
+act2        fg
+act3        base01
+
+ina1        base00
+ina2        fg
+ina3        base00
+
+sel1     blu
+sel2     base3
+
+cursortheme     Adwaita  
+icontheme       ePapirus
+gtktheme        buddybud 

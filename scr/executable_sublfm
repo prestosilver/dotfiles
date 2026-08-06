@@ -1,0 +1,4 @@
+path=$(sublget -r d)
+if [[ "$path" != "untitled" ]]; then
+launchfm -c B -p $path &
+fi

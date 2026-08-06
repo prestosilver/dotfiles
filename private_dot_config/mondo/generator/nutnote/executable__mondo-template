@@ -1,0 +1,31 @@
+# colors 
+
+hiMode 0, "selection", %%act2%%
+hiMode 0, "bg"       , %%bg%%
+hiMode 0, "grid"     , %%ina1%%
+hiMode 0, "card"     , %%ina1%%
+hiMode 0, "border"   , %%act3%%
+hiMode 0, "progress" , %%act1%%
+hiMode 0, "err"      , %%red%%
+hiMode 0, "text"     , %%fg%%
+hiMode 0, "status"   , %%fg%%
+
+hiMode 1, "selection", %%mag%%
+hiMode 1, "bg"       , %%bg%%
+hiMode 1, "grid"     , %%ina1%%
+hiMode 1, "card"     , %%ina1%%
+hiMode 1, "border"   , %%act3%%
+hiMode 1, "progress" , %%act1%%
+hiMode 1, "err"      , %%red%%
+hiMode 1, "text"     , %%fg%%
+hiMode 1, "status"   , %%fg%%
+
+hiMode 2, "selection", %%ylw%%
+hiMode 2, "bg"       , %%bg%%
+hiMode 2, "grid"     , %%ina1%%
+hiMode 2, "card"     , %%ina1%%
+hiMode 2, "border"   , %%act3%%
+hiMode 2, "progress" , %%act1%%
+hiMode 2, "err"      , %%red%%
+hiMode 2, "text"     , %%fg%%
+hiMode 2, "status"   , %%fg%%

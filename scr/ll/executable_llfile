@@ -1,0 +1,8 @@
+file=$1
+choice="$(echo -e "edit\ncode" | dmenu)"
+case $choice in
+  "edit")
+    st -c stC -T $file -e /usr/bin/vim $file;;
+  "code")
+    code $file
+esac

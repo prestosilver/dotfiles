@@ -1,0 +1,8 @@
+dir="$(echo $1 | sed "s/file:\///;s/\/$//")"
+choice="$(echo -e "web\nclone" | dmenu)"
+case $choice in
+  "clone")
+    git clone $dir $HOME/doc/rep/github.com/${dir##*/};;
+  "web")
+    qutebrowser $dir;;
+esac

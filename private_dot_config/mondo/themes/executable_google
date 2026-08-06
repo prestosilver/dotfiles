@@ -1,0 +1,47 @@
+!! Theme:    google
+!! Author:   john
+!! Created:  2020-03-15
+fg #373b41
+bg #ffffff
+
+base00 #ffffff
+base01 #BBBCBE
+base02 #797B7F
+base03 #373B41
+
+base0 #373b41
+base1 #797B7F
+base2 #BBBCBE
+base3 #ffffff
+
+red #cc342b
+ora #cc342b
+grn #198844
+ylw #fba922
+blu #3971ed
+mag #a36ac7
+vio #a36ac7
+cyn #3971ed
+
+fg1         fg
+fg2         base2
+bg1         bg
+bg2         base03
+
+dark1       base00
+light1      base3
+
+act1        base1
+act2        base2
+act3        base1
+
+ina1        base2
+ina2        fg
+ina3        base2
+
+sel1     base00
+sel2     base3
+
+cursortheme     Adwaita  
+icontheme       ePapirus
+gtktheme        buddybud 

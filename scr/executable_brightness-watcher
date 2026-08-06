@@ -1,0 +1,5 @@
+#!/bin/bash
+
+brightnessctl s $1
+
+cat /sys/class/backlight/intel_backlight/brightness > /tmp/xobb

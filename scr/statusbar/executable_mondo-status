@@ -1,0 +1,6 @@
+case $1 in
+  "1" ) mondocontrol menu; exit;;
+  "icon" ) echo ""; exit;;
+esac
+
+echo " $(mondo -c theme)"

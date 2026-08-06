@@ -1,0 +1,5 @@
+vol=$(pamixer --get-volume)
+[[ $1 == "lol" ]] || pamixer --set-volume $((vol - 1))
+[[ $1 == "lol" ]] || pamixer --set-volume $((vol))
+
+cat /sys/class/backlight/intel_backlight/brightness > /tmp/xobb

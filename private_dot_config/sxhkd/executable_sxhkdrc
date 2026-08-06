@@ -1,0 +1,186 @@
+# launchers
+super + d
+  dmenu_run -p "Run:"
+super + shift + d
+  j4-dmenu-desktop --dmenu 'dmenu -p "DRun:"'
+super + l
+  linklord -x 'gurl "%u"'
+super + t
+  mondocontrol menu
+super + shift + w
+  bwpcontrol menu
+
+# gui apps
+super + a
+  pavucontrol
+super + c
+  camtoggle
+super + w
+  chromium
+super + shift + s
+  scrot -s
+Print
+  scrot -s
+super + shift + v
+  clipmenu
+
+# terminal apps
+super + v
+  kitty -T cava --class cava cava
+super + i
+  kitty -T htop --class htop /usr/bin/htop
+super + e
+  kitty -T neomutt --class neomutt /usr/bin/neomutt
+super + m
+  kitty -T ncmpcpp --class ncmpcpp /usr/bin/spt
+super + {_,shift +} r
+  kitty -T Files --class Files{D,B} /usr/bin/ranger
+super + shift + y
+  sxiv -s h -b ~/pix/wallpapers/currentwall
+
+# terminals
+super + {_,shift +,control +} Return
+  kitty --class st{A,B,F}
+super + shift + c
+  kitty --class stC
+
+# sxhkd
+super + F7
+  killall -SIGUSR1 sxhkd
+
+# budwm
+super + F5
+  fakesig 1 # cycle layout
+super + F6
+  fakesig 2 # cycle layout
+super + {_,shift + } h
+  fakesig {3,4} # cycle layout
+super + {_,shift + } Tab
+  fakesig {5,6} # cycle focus
+super + f
+  fakesig 7 # fullscreen
+super + b
+  fakesig 8 # togglebar
+super + {_,shift + } o
+  fakesig {9,10} # big/small a
+super + {shift + m, n , shift + n}
+  fakesig {11,12,13} # setconmode
+super + {_,shift + } p
+  fakesig {14, 15} # big/small b
+super + {_,shift + } q
+  fakesig 16 # close
+super + space
+  fakesig 17 # floating toggle
+super + {Up, Down, Left, Right}
+  fakesig {18,19,20,21} # move split
+super + shift + Escape
+  fakesig 99 # quit
+super + shift + b
+  fakesig 24 # quit
+super + {F1,F2,F3,F4}
+  fakesig {101,111,121,131}
+super + control + {F1,F2,F3,F4}
+  fakesig {102,112,122,132}
+super + shift + {F1,F2,F3,F4}
+  fakesig {103,113,123,133}
+super + control + shift + {F1,F2,F3,F4}
+  fakesig {104,114,124,134}
+super + shift + {1,2,3,4}
+  fakesig {115,125,135,145}
+
+# herbstluftwm
+#super + f
+#  herbstclient fullscreen toggle
+#super + q
+#  herbstclient close
+#super + shift + Escape
+#  herbstclient quit
+#super + Left
+#  herbstclient focus left
+#super + Right
+#  herbstclient focus right
+#super + Down
+#  herbstclient focus down
+#super + Up
+#  herbstclient focus up
+#super + shift + Left
+#  herbstclient shift left
+#super + shift + Right
+#  herbstclient shift right
+#super + shift + Down
+#  herbstclient shift down
+#super + shift + Up
+#  herbstclient shift up
+#super + ctrl + Left
+#  herbstclient split left
+#super + ctrl + Right
+#  herbstclient split right
+#super + ctrl + Down
+#  herbstclient split bottom
+#super + ctrl + Up
+#  herbstclient split top
+#super + {ctrl,shift} + q
+#  herbstclient remove
+#super + {F1,F2,F3,F4}
+#  herbstclient use {F1,F2,F3,F4}
+#super + shift + {F1,F2,F3,F4}
+#  herbstclient move {F1,F2,F3,F4}
+
+
+# conman
+#super + {_,shift + } Tab
+#  conmanmsg cyclefocus {_,-}1
+#super + shift + {1-4}
+#  conmanmsg sendcon {1-4}
+#super + b
+#  conmanmsg togglebar
+#super + {_,shift + } q
+#  conmanmsg close
+#super + shift + {i,o} 
+#  conmanmsg {i,o}gaps
+#super + {_,shift + } Escape
+#  conmanmsg quit
+#super + space
+#  conmanmsg togglefloating
+#super + f
+#  conmanmsg togglefullscreen
+#super + shift + e
+#  conmanmsg center
+#super + Up
+#  conmanmsg hsplit -10
+#super + Down
+#  conmanmsg hsplit 10
+#super + Left
+#  conmanmsg vsplit -10
+#super + Right
+#  conmanmsg vsplit 10
+#super + F2
+#  conmanmsg reload
+#super + F3
+#  conmanmsg resetsplit
+
+# audio
+XF86AudioMute
+  pamixer -t
+XF86AudioMicMute
+  pamixer --default-source -t
+XF86Audio{Raise,Lower}Volume
+  pamixer -{i,d} 5
+shift + XF86AudioMute
+  pamixer --default-source -t
+shift + XF86Audio{Raise,Lower}Volume
+  pamixer --default-source -{i,d} 5
+# XF86Audio{Next,Prev}
+#   mediacontrol {next,previous}
+XF86MonBrightness{Up,Down}
+  xbacklight {-inc,-dec} 10
+
+#media
+super + {_,shift +} bracketright
+  spt pb --seek +{10,120}
+super + {_,shift +} bracketleft
+  spt pb --seek -{10,120}
+# XF86Audio{Pause,Play,Stop}
+#   mediacontrol toggle
+# XF86Audio{Rewind,Forward}
+#   spt pb --seek {-,+}10

@@ -1,0 +1,13 @@
+docker run -d \
+  --name nvim-server \
+  --restart unless-stopped \
+  -p 6080:3000 \
+  -p 8090:8090 \
+  -v ~/workspace:/workspace \
+  -v /appdata/nvim-server:/config \
+  -e UID=$UID \
+  -e GID=$GID \
+  -e TZ=Asia/Shanghai \
+  -e USER=john \
+  -e SECRET=hellow56 \
+  hikariai/nvim-server:latest

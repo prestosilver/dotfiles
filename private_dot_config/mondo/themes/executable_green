@@ -1,0 +1,54 @@
+fg #000000
+bg #00ff00
+
+base00 #ffffff
+base01 #ffffff
+base02 #ffffff
+base03 #ffffff
+
+base0 #D8DEE9
+base1 #E5E9F0
+base2 #ECEFF4
+base3 #f9f5d7
+
+red #000000
+ora #000000
+grn #000000
+ylw #000000
+blu #000000
+mag #000000
+vio #000000
+cyn #000000
+
+fg1         fg
+fg2         base2
+bg1         bg
+bg2         base03
+
+dark1       base00
+light1      base3
+
+act1        base01
+act2        base3
+act3        base03
+
+ina1        base02
+ina2        fg
+ina3        base03
+
+sel1     base00
+sel2     base3
+
+cursortheme     Adwaita  
+icontheme       ePapirus
+gtktheme        buddybud 
+
+terminalfontface1 Papyrus Pixel Mono 
+terminalfontsize1 14
+terminalfontface2 Papyrus Pixel Mono
+terminalfontsize2 14
+
+guifontface1      Papyrus Pixel Mono
+guifontsize1      14
+guifontface2      Papyrus Pixel Mono
+guifontsize2      14

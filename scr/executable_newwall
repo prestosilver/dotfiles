@@ -1,0 +1,4 @@
+bing-wallpaper -o ~ -f tmp
+bwp -w tmp.*
+bwp -x $("" | dmenu)
+rm ~/tmp.*

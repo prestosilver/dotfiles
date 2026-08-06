@@ -1,0 +1,17 @@
+require('prestosilver.packer')
+
+require('prestosilver.barbar')
+require('prestosilver.complete')
+require('prestosilver.dashboard')
+require('prestosilver.gui')
+require('prestosilver.highlight')
+require('prestosilver.lsp')
+require('prestosilver.project')
+require('prestosilver.reload')
+require('prestosilver.status')
+require('prestosilver.telescope')
+require('prestosilver.term')
+require('prestosilver.tree')
+require('prestosilver.silicon')
+
+require('prestosilver.binds')

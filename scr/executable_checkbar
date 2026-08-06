@@ -1,0 +1,8 @@
+#!/bin/bash
+while xsetroot -name "fsignal:2"; do
+  while [[ "$new" != "$old" ]]; do
+    old=$new
+    new="$(for $i in ~/scr/statusbar/volume; sh $i)"
+    sleep 2
+  done
+done

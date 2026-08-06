@@ -1,0 +1,44 @@
+fg #f2e5bc
+bg #000000
+
+base00 #15152f
+base01 #faf18e
+base02 #58b197
+base03 #ebdbb2
+
+base0 #181921
+base1 #666666
+base2 #c5a9a7
+base3 #FFEFFE
+
+red #cc241d
+ora #3f877b
+grn #98971a
+ylw #d79921
+blu #458588
+mag #b16286
+vio #d3869b
+cyn #689d6a
+
+fg1         fg
+fg2         base03
+bg1         bg
+bg2         base0
+
+dark1       base00
+light1      base1
+
+act1        base0
+act2        fg
+act3        base0
+
+ina1        base00
+ina2        base1
+ina3        base00
+
+sel1     base00
+sel2     base1
+
+cursortheme     Windows8-cursor  
+icontheme       DamaDamas-icon-theme  
+gtktheme        hyper  

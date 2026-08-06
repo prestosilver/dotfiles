@@ -1,0 +1,27 @@
+[colors.bright]
+black = "%%bg%%"
+blue = "%%blu%%"
+cyan = "%%cyn%%"
+green = "%%grn%%"
+magenta = "%%mag%%"
+red = "%%red%%"
+white = "%%fg%%"
+yellow = "%%ylw%%"
+
+[colors.cursor]
+cursor = "%%fg%%"
+text = "%%bg%%"
+
+[colors.normal]
+black = "%%bg%%"
+blue = "%%blu%%"
+cyan = "%%cyn%%"
+green = "%%grn%%"
+magenta = "%%mag%%"
+red = "%%red%%"
+white = "%%fg%%"
+yellow = "%%ylw%%"
+
+[colors.primary]
+background = "%%bg%%"
+foreground = "%%fg%%"

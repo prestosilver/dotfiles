@@ -1,0 +1,10 @@
+case $1 in
+  "1" ) bwpcontrol menu; exit;;
+  "3" ) bwpcontrol edit; exit;;
+  "icon" ) echo "" ; exit;;
+esac
+
+_curpth="$(readlink "$BWP_DIR/currentwall")"
+_curnam="${_curpth##*/}"
+
+echo " $_curnam"

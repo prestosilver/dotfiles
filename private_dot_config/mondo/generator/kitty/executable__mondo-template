@@ -1,0 +1,33 @@
+font_family      family="%%terminalfontface1%%" style="%%terminalfontstyle%%"
+font_size        %%terminalfontsize1%% 
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+background_opacity 1.0
+window_margin_width 10
+
+background %%bg%%
+foreground %%fg%%
+cursor %%fg%%
+selection_background %%act1%%
+color0 %%bg%%
+color8 %%base0%%
+color1 %%red%%
+color9 %%ora%%
+color2 %%grn%%
+color10 %%base2%%
+color3 %%ylw%%
+color11 %%base3%%
+color4 %%blu%%
+color12 %%vio%%
+color5 %%mag%%
+color13 %%base01%%
+color6 %%cyn%%
+color14 %%base02%%
+color7 %%fg%%
+color15 %%base03%%
+selection_foreground %%act2%%
+
+enable_audio_bell no
+confirm_os_window_close 0

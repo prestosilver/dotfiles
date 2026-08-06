@@ -1,0 +1,1 @@
+LD_PRELOAD=/usr/lib/libcurl.so.3:/usr/lib/spotifywm.so exec spotify

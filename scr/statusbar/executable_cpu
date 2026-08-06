@@ -1,0 +1,7 @@
+if [[ $1 == "icon" ]]; then
+  echo ""
+  exit
+fi
+
+
+sensors | awk '/Core 0/ {print $3}' | sed 's/\.0//;s/+//;s/^/ /'

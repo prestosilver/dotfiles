@@ -1,0 +1,11 @@
+set default-bg \%%ina1%%
+set default-fg \%%fg%%
+
+set statusbar-bg \%%act1%%
+set statusbar-fg \%%act2%%
+
+set recolor-lightcolor          \%%bg%% 
+set recolor-darkcolor           \%%fg%%
+set recolor true
+
+set render-loading true

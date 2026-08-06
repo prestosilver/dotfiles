@@ -1,0 +1,13 @@
+-- color theme
+funcs = require("lib.funcs")
+
+-- generated with mondo
+session:set_color(true, "border", "%%act3%%")
+session:set_color(true, "background", "%%act1%%")
+session:set_color(true, "foreground", "%%act2%%")
+
+session:set_color(false, "border", "%%ina3%%")
+session:set_color(false, "background", "%%ina1%%")
+session:set_color(false, "foreground", "%%ina2%%")
+
+funcs.set_font_pt("%%guifontface1%%", %%guifontsize1%%)

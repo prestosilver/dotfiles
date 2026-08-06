@@ -1,0 +1,3 @@
+#!/bin/sh
+xsetroot -name "fsignal:$1"
+[[ $1 > 98 ]] && xsetroot -name "fsignal:2"

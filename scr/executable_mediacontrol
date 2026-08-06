@@ -1,0 +1,17 @@
+#!/bin/bash
+
+{ spt pb --$*; xsetroot -name "fsignal:2"; exit; }
+
+case $1 in
+
+  playpause ) mpc toggle ;;
+
+  next ) mpc next ;;
+
+  prev ) mpc prev ;;
+
+  seek ) mpc seek $2 ;;
+
+esac
+
+xsetroot -name "fsignal:2"

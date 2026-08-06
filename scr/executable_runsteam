@@ -1,0 +1,1 @@
+LD_PRELOAD=/usr/lib/steamwm.so exec /usr/bin/steam -quiet &
