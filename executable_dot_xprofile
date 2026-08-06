@@ -1,0 +1,27 @@
+#!/bin/bash
+
+cd
+eval $(/use/bin/gnome-keyring-daemon --start --component=gpg,pkcs11,secrets,ssh) &
+export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO GPG_AGENT_SOCK
+blueman-applet &
+nm-applet &
+flameshot &
+bwp &
+devmon &
+sxhkd &
+killall -KILL python3
+dump_xsettings > $HOME/.xsettingsd 
+killall -HUP xsettingsd 
+xsettingsd &
+/usr/lib/gsd-xsettings &
+/usr/lib/xdg-desktop-portal-gtk &
+clipmenud &
+#filesort &
+dunst &
+dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+#tauon &
+
+# exec ~/doc/rep/github.com/con-wm/zig-out/bin/conman 2> ~/.conmaninfo
+prime-offload
+xrandr --dpi 100
+xrdb ~/.Xresources

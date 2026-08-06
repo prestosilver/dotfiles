@@ -37,6 +37,14 @@ for line in $(cat /home/john/.dotfiles/dotfiles/packages.txt); do
       sudo make install
       popd
       ;;
+    "Z")
+      clonedir=$HOME/doc/rep/github.com/${toinstall##*/}
+      git clone http://github.com/$toinstall $clonedir
+      pushd $clonedir
+      zig build -Doptimize=ReleaseFast
+      sudo cp zig-out/* /usr/ 
+      popd
+      ;;
     esac
 done
 
