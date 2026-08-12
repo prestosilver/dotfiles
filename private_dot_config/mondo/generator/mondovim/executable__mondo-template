@@ -126,4 +126,4 @@ hi Pmenu guibg=%%ina1%% guifg=%%ina2%%
 hi PmenuSel guibg=%%act1%% guifg=%%act2%%
 
 lua vim.opt.guifont="%%terminalfontface1%%:h12"
-let g:neovide_scale_factor=2.1
+let g:neovide_scale_factor=1.0

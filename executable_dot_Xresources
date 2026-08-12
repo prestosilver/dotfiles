@@ -1,41 +1,41 @@
 Xft.dpi: 256
 *.dpi: 256
 
-st.foreground:             #1c1c1c
-st.background:             #ffffd7
-st.cursorColor:            #1c1c1c
-st.cursorColor2:           #ffffd7
-st.borderColor:            #ffffd7
+st.foreground:             #c5a9a7
+st.background:             #15152f
+st.cursorColor:            #c5a9a7
+st.cursorColor2:           #15152f
+st.borderColor:            #15152f
 
-st.color0:                 #ffffd7
-st.color8:                 #808080
-st.color1:                 #dc322f
-st.color9:                 #cb4b16
-st.color2:                 #859900
-st.color10:                #d7d7af
-st.color3:                 #b58900
-st.color11:                #ffffd7
-st.color4:                 #268bd2
-st.color12:                #5f5faf
-st.color5:                 #af005f
-st.color13:                #4e4e4e
-st.color6:                 #00afaf
-st.color14:                #262626
-st.color7:                 #1c1c1c
-st.color15:                #1c1c1c
+st.color0:                 #15152f
+st.color8:                 #4d7385
+st.color1:                 #546039
+st.color9:                 #3f877b
+st.color2:                 #3d6481
+st.color10:                #c5a9a7
+st.color3:                 #254f64
+st.color11:                #666666
+st.color4:                 #412d46
+st.color12:                #c87296
+st.color5:                 #ff62a6
+st.color13:                #faf18e
+st.color6:                 #6dc4a2
+st.color14:                #58b197
+st.color7:                 #c5a9a7
+st.color15:                #666666
 
-*.coloract1:              #4e4e4e
-*.coloract2:              #ffffd7
-*.colorina1:              #8a8a8a
-*.colorina2:              #ffffd7
+*.coloract1:              #254f64
+*.coloract2:              #FFEFFE
+*.colorina1:              #3d6481
+*.colorina2:              #c5a9a7
 
 
-budwm.normbordercolor:      #808080
-budwm.normbgcolor:          #8a8a8a
-budwm.normfgcolor:          #ffffd7
-budwm.selbordercolor:       #808080
-budwm.selbgcolor:           #4e4e4e
-budwm.selfgcolor:           #ffffd7
+budwm.normbordercolor:      #15152f
+budwm.normbgcolor:          #3d6481
+budwm.normfgcolor:          #c5a9a7
+budwm.selbordercolor:       #15152f
+budwm.selbgcolor:           #254f64
+budwm.selfgcolor:           #FFEFFE
 
 st.borderpx:          20
 st.alpha: 1
@@ -48,9 +48,9 @@ st.font:       CascadiaMonoPL Nerd Font Mono:size=14:antialias=true
 *boldItalicFont: 
 
 
-dmenu.background: #4e4e4e
-dmenu.foreground: #ffffd7
-dmenu.selbackground: #8a8a8a
-dmenu.selforeground: #ffffd7
+dmenu.background: #254f64
+dmenu.foreground: #FFEFFE
+dmenu.selbackground: #3d6481
+dmenu.selforeground: #c5a9a7
 
 ! syntax:ssExcla

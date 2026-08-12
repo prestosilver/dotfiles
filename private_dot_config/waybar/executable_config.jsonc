@@ -17,7 +17,6 @@
         "custom/conpositor-memory"
     ],
     "modules-center": [
-        "custom/conpositor-icon",
         //"custom/spacer",
         "custom/conpositor-title"
     ],
@@ -140,35 +139,28 @@
         "size": 20
     },
     "custom/conpositor-memory": {
-        "exec": "/home/john/.config/waybar/custom/dwl.sh run 'get_memory()'",
-        "return-type": "json",
-        "interval":  1,
-        "escape": true,
-        "format": "{}   "
-    },
-    "custom/conpositor-icon": {
-        "exec": "/home/john/.config/waybar/custom/dwl.sh icon",
+        "exec": "/home/john/.config/waybar/custom/dwl.sh 'return get_memory()'",
         "return-type": "json",
         "interval":  1,
         "escape": true,
         "format": "{}   "
     },
     "custom/conpositor-title": {
-        "exec": "/home/john/.config/waybar/custom/dwl.sh label",
+        "exec": "/home/john/.config/waybar/custom/dwl.sh 'return active_client_title()'",
         "return-type": "json",
         "interval": 1,
         "escape": true,
         "format": "{}"
     },
     "custom/conpositor-tag": {
-        "exec": "/home/john/.config/waybar/custom/dwl.sh tag",
+        "exec": "/home/john/.config/waybar/custom/dwl.sh 'return active_tag()'",
         "return-type": "json",
         "interval": 5,
         "escape": true,
         "format": "{}"
     },
     "custom/conpositor-layout": {
-        "exec": "/home/john/.config/waybar/custom/dwl.sh layout",
+        "exec": "/home/john/.config/waybar/custom/dwl.sh 'return active_layout()'",
         "return-type": "json",
         "interval": 5,
         "escape": false,
