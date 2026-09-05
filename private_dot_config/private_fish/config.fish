@@ -18,6 +18,7 @@ set -gx JAVA_HOME /usr/lib/jvm/java-8-openjdk/jre/
 set -gx BWP_GEOMETRY "2256x1504"
 set -gx MOZ_ENABLE_WAYLAND 1
 set -gx ELECTRON_OZONE_PLATFORM_HINT wayland
+set -gx SXHKD_SHELL /bin/sh
 
 thefuck --alias oops | source
 

@@ -46,11 +46,7 @@ gtktheme        buddybud
 terminalfontstyle Bold
 
 terminalfontface1 ComicShannsMono Nerd Font Mono
-terminalfontsize1 32
 terminalfontface2 Twitter Color Emoji
-terminalfontsize2 32
 
 guifontface1      ComicShannsMono Nerd Font Mono
-guifontsize1      32
 guifontface2      ComicShannsMono Nerd Font Mono
-guifontsize2      32

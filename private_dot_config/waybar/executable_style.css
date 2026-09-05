@@ -1,54 +1,54 @@
 * {
   font-size: 14pt;
-  font-family: CascadiaMonoPL Nerd Font Mono;
+  font-family: ComicShannsMono Nerd Font Mono;
   font-weight: bold;
-  color: #FFEFFE;
+  color: #f9f5d7;
 }
 
 window#waybar {
-  background: #254f64;
-  color: #FFEFFE;
+  background: #3B4252;
+  color: #f9f5d7;
 }
 
 #window {
-  background: #254f64;
-  color: #FFEFFE;
+  background: #3B4252;
+  color: #f9f5d7;
 }
 
 #custom-spacer {
   padding: 0 3px;
-  color: #15152f;
+  color: #2E3440;
 }
 
 #cava {
   padding: 0 3px;
-  background: #15152f;
-  color: #254f64;
+  background: #2E3440;
+  color: #3B4252;
 }
 
 #workspaces,
 #workspaces button {
   padding-left: 5px;
-  background-color: #254f64;
+  background-color: #3B4252;
   border: 0;
-  color: #c5a9a7;
+  color: #D8DEE9;
 }
 
 #custom-conpositor-layout {
-  background-color: #3d6481;
-  color: #c5a9a7;
+  background-color: #434C5E;
+  color: #D8DEE9;
   padding: 5px 3px;
 }
 
 #custom-conpositor-tag {
-  background-color: #3d6481;
-  color: #c5a9a7;
+  background-color: #434C5E;
+  color: #D8DEE9;
   padding-right: 5px;
 }
 
 #pulseaudio.muted {
-  background-color: #3d6481;
-  color: #c5a9a7;
+  background-color: #434C5E;
+  color: #D8DEE9;
 }
 
 #battery.1 {
@@ -65,34 +65,34 @@ window#waybar {
 #user,
 #pulseaudio,
 #custom-spotify {
-  background-color: #254f64;
-  color: #FFEFFE;
+  background-color: #3B4252;
+  color: #f9f5d7;
   padding-left: 3px;
   padding-right: 3px;
 }
 
 #tray {
-  background-color: #3d6481;
-  color: #c5a9a7;
+  background-color: #434C5E;
+  color: #D8DEE9;
   padding-right: 5px;
   padding-left: 5px;
 }
 
 #battery.charging {
-  background-color: #3d6481;
-  color: #3d6481;
+  background-color: #A3BE8C;
+  color: #434C5E;
 }
 
 @keyframes blink {
   to {
-    background-color: #3d6481;
-    color: #546039;
+    background-color: #434C5E;
+    color: #BF616A;
   }
 }
 
 #battery.warning:not(.charging) {
-  background: #546039;
-  color: #3d6481;
+  background: #BF616A;
+  color: #434C5E;
   animation-name: blink;
   animation-duration: 1.0s;
   animation-timing-function: linear;

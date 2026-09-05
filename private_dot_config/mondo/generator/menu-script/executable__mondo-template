@@ -1,14 +1,16 @@
 #!/bin/bash
-exec bemenu --fn "%%guifontface1%% %%guifontsize1%%" \
-    --tb '%%bg%%' --tf '%%fg%%' \
-    --fb '%%bg%%' --ff '%%fg%%' \
-    --cb '%%act2%%' --cf '%%act1%%' \
-    --nb '%%ina1%%' --nf '%%ina2%%' \
-    --hb '%%act1%%' --hf '%%act2%%' \
-    --fbb '%%act1%%' --fbf '%%act2%%' \
-    --sb '%%act1%%' --sf '%%act2%%' \
-    --ab '%%ina1%%' --af '%%ina2%%' \
-    --scb '%%act1%%' --scf '%%act2%%' \
-    --bdr '%%act3%%' \
-    --hp 10 --list 15 \
-    -B 2 --fixed-height --counter always
+
+exec dmenu
+# exec bemenu --fn "%%guifontface1%% %%guifontsize1%%" \
+#     --tb '%%bg%%' --tf '%%fg%%' \
+#     --fb '%%bg%%' --ff '%%fg%%' \
+#     --cb '%%act2%%' --cf '%%act1%%' \
+#     --nb '%%ina1%%' --nf '%%ina2%%' \
+#     --hb '%%act1%%' --hf '%%act2%%' \
+#     --fbb '%%act1%%' --fbf '%%act2%%' \
+#     --sb '%%act1%%' --sf '%%act2%%' \
+#     --ab '%%ina1%%' --af '%%ina2%%' \
+#     --scb '%%act1%%' --scf '%%act2%%' \
+#     --bdr '%%act3%%' \
+#     --hp 10 --list 15 \
+#     -B 6 --fixed-height --counter always

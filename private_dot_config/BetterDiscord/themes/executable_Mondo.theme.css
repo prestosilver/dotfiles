@@ -14,12 +14,12 @@
 .theme-dark,
 .theme-light,
 :root {
-    --background-primary: #15152f !important;
-    --background-secondary: #15152f !important;
-    --background-secondary-alt: #15152f !important;
-    --background-tertiary: #15152f !important;
-    --background-accent: #15152f !important;
-    --background-floating: #15152f !important;
+    --background-primary: #2E3440 !important;
+    --background-secondary: #2E3440 !important;
+    --background-secondary-alt: #2E3440 !important;
+    --background-tertiary: #2E3440 !important;
+    --background-accent: #2E3440 !important;
+    --background-floating: #2E3440 !important;
     --background-modifier-hover: rgba(255,255,255,0.01) !important;
     --background-modifier-active: rgba(255,255,255,0.03) !important;
     --background-modifier-selected: rgba(255,255,255,0.04) !important;
@@ -31,19 +31,19 @@
     --deprecated-text-input-border: var(--background-floating) !important;
     --deprecated-text-input-border-disabled: var(--background-tertiary) !important;
     --activity-card-background: var(--background-primary) !important;
-    --channels-default: #c5a9a7 !important;
-    --text-muted: #c5a9a7 !important;
-    --text-normal: #c5a9a7 !important; 
-    --interactive-normal: #c5a9a7 !important;
-    --interactive-hover: #c5a9a7 !important;
-    --interactive-active: #c5a9a7 !important;
-    --interactive-muted: #c5a9a7 !important;
+    --channels-default: #D8DEE9 !important;
+    --text-muted: #D8DEE9 !important;
+    --text-normal: #D8DEE9 !important; 
+    --interactive-normal: #D8DEE9 !important;
+    --interactive-hover: #D8DEE9 !important;
+    --interactive-active: #D8DEE9 !important;
+    --interactive-muted: #D8DEE9 !important;
     --header-primary: white !important;
-    --header-secondary: #c5a9a7 !important;
+    --header-secondary: #D8DEE9 !important;
     --toast-background: var(--background-primary) !important;
     --toast-header: var(--background-tertiary) !important;
     --toast-contents: var(--background-secondary) !important;
     --toast-box-shadow: rgba(0, 0, 0, .2) !important;
     --toast-border: var(--background-tertiary) !important;
-    --text-link: #412d46 !important;
+    --text-link: #5E81AC !important;
 }

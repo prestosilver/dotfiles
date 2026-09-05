@@ -20,8 +20,14 @@ clipmenud &
 dunst &
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 #tauon &
+picom &
 
 # exec ~/doc/rep/github.com/con-wm/zig-out/bin/conman 2> ~/.conmaninfo
 prime-offload
 xrandr --dpi 100
 xrdb ~/.Xresources
+
+mkfifo /tmp/xobbright
+tail -f /tmp/xobbright | xob -s backlight &
+volume-watcher | xob &
+mic-watcher | xob -s mic &

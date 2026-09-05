@@ -4,7 +4,8 @@ import sys
 import subprocess
 
 # Adapt to your use-case
-source_id = 0
+last_values = {}
+last_mutes = {}
 
 with Pulse() as pulse:
   def callback(ev):
@@ -12,20 +13,24 @@ with Pulse() as pulse:
   try:
     pulse.event_mask_set('source')
     pulse.event_callback_set(callback)
-    last_value = round(pulse.source_list()[source_id].volume.value_flat * 100)
-    last_mute = pulse.source_list()[source_id].mute == 1
+    for source_id, source in enumerate(pulse.source_list()):
+      last_values[source_id] = round(source.volume.value_flat * 100)
+      last_mutes[source_id] = source.mute == 1
     while True:
       pulse.event_listen()
-      value = round(pulse.source_list()[source_id].volume.value_flat * 100)
-      mute = pulse.source_list()[source_id].mute == 1
-      if value != last_value or mute != last_mute:
-        print(value, end='')
-        if mute:
+      values = {}
+      mutes = {}
+      for source_id, source in enumerate(pulse.source_list()):
+        value = round(source.volume.value_flat * 100)
+        mute = source.mute == 1
+        if not(source_id in last_values) or value != last_values[source_id] or mute != last_mutes[source_id]:
+          print(value, end='')
+          if mute:
             print('!')
-        else:
+          else:
             print('')
-        last_value = value
-        last_mute = mute
+          last_values[source_id] = value
+          last_mutes[source_id] = mute
       sys.stdout.flush()
   except:
     pass

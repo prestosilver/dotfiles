@@ -173,7 +173,7 @@ shift + XF86Audio{Raise,Lower}Volume
 # XF86Audio{Next,Prev}
 #   mediacontrol {next,previous}
 XF86MonBrightness{Up,Down}
-  xbacklight {-inc,-dec} 10
+  screenbrightness {-inc,-dec}
 
 #media
 super + {_,shift +} bracketright

@@ -3,7 +3,7 @@ default = {
   padding = 0;
   border = 2;
   outline = 0;
-  thickness = 24;
+  thickness = 48;
   color = {
     normal = {
       fg = "%%act1%%";
@@ -23,11 +23,11 @@ default = {
   };
 };
 mic = {
-  x = {relative = 1.0; offset = -103;};
+  x = {relative = 1.0; offset = -127;};
   padding = 0;
   border = 2;
   outline = 0;
-  thickness = 24;
+  thickness = 48;
   color = {
     normal = {
       fg = "%%act1%%";
@@ -47,11 +47,11 @@ mic = {
   };
 };
 backlight = {
-  x = {relative = 1.0; offset = -131;};
+  x = {relative = 1.0; offset = -179;};
   padding = 0;
   border = 2;
   outline = 0;
-  thickness = 24;
+  thickness = 48;
   color = {
     normal = {
       fg = "%%act1%%";

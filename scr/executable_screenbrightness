@@ -1,0 +1,2 @@
+xbacklight $1 5
+xbacklight -get > /tmp/xobbright
