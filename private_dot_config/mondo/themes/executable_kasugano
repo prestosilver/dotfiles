@@ -44,13 +44,3 @@ wall bg
 cursortheme     Adwaita  
 icontheme       ePapirus
 gtktheme        buddybud 
-
-terminalfontface1 ComicShannsMono Nerd Font Mono
-terminalfontsize1 14
-terminalfontface2 Twitter Color Emoji
-terminalfontsize2 14
-
-guifontface1      ComicShannsMono Nerd Font Mono
-guifontsize1      14
-guifontface2      ComicShannsMono Nerd Font Mono
-guifontsize2      14

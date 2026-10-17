@@ -20,8 +20,6 @@ set -gx MOZ_ENABLE_WAYLAND 1
 set -gx ELECTRON_OZONE_PLATFORM_HINT wayland
 set -gx SXHKD_SHELL /bin/sh
 
-thefuck --alias oops | source
-
 alias spotifyd='spotifyd -u 21ndnpvlkdukezg7ht2mkcyay -P "pass spotify" --device-type speaker -d "Jorjes House" --on-song-change-hook "album-art"' 
 alias vim='neovide'
 

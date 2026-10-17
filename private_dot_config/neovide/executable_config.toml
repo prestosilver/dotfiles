@@ -1,4 +1,4 @@
-no-multigrid = true
+no-multigrid = false
 fork = true
 frame = "none"
 

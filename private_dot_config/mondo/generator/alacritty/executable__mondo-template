@@ -25,3 +25,10 @@ yellow = "%%ylw%%"
 [colors.primary]
 background = "%%bg%%"
 foreground = "%%fg%%"
+
+[font]
+size = 28 
+
+[font.normal]
+family = "%%terminalfontface1%%"
+
